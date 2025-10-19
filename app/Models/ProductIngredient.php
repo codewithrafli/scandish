@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ProductIngredient extends Model
 {
-    use SoftDeletes;
-
     protected $fillable = [
         'product_id',
         'name'
