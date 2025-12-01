@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
+    public function scanQR()
+    {
+        return view('pages.scan-qr');
+    }
+
     public function index(Request $request)
     {
         $store = User::where('username', $request->username)->first();
