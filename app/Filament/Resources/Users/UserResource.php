@@ -13,12 +13,18 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Auth;
 
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Users;
+
+    public static function canViewAny(): bool
+    {
+        return Auth::user()->role === 'admin';
+    }
 
     public static function form(Schema $schema): Schema
     {
