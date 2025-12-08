@@ -25,7 +25,6 @@ class ProductCategoryForm
                 FileUpload::make('icon')
                     ->label('Ikon Kategori')
                     ->disk('public')
-                    ->directory('product-categories')
                     ->required(),
             ]);
     }

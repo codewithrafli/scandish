@@ -33,8 +33,7 @@ class ProductsTable
                     ->label('Kategori Menu'),
                 ImageColumn::make('image')
                     ->label('Foto Menu')
-                    ->disk('public')
-                    ->directory('products'),
+                    ->disk('public'),
                 TextColumn::make('price')
                     ->label('Harga Menu')
                     ->formatStateUsing(function (string $state) {
