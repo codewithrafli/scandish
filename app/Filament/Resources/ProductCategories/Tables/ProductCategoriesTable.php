@@ -29,6 +29,8 @@ class ProductCategoriesTable
                     ->label('Nama Kategori'),
                 ImageColumn::make('icon')
                     ->label('Ikon Kategori')
+                    ->disk('public')
+                    ->directory('product-categories'),
             ])
             ->filters([
                 TrashedFilter::make(),
