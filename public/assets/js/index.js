@@ -1,142 +1,142 @@
-let cartCountElement = document.querySelector("#cart-count");
+let cartCountElement = document.querySelector("#cart-count"); // Ambil elemen untuk menampilkan jumlah item di cart
 
-const swiper = new Swiper('.swiper', {
-    slidesPerView: "auto",
-    spaceBetween: 20,
+const swiper = new Swiper('.swiper', { // Inisialisasi Swiper untuk carousel/slider
+    slidesPerView: "auto", // Set jumlah slide yang terlihat otomatis
+    spaceBetween: 20, // Set jarak antar slide 20px
 });
 
-const addToCart = (id) => {
-    event.preventDefault();
+const addToCart = (id) => { // Fungsi untuk menambahkan item ke cart
+    event.preventDefault(); // Prevent default behavior
 
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const itemIndex = cart.findIndex(item => item.id === id);
-    if (itemIndex > -1) {
-        cart[itemIndex].qty += 1;
-    } else {
-        cart.push({ id, qty: 1, notes: "" });
+    const cart = JSON.parse(localStorage.getItem("cart")) || []; // Parse data cart dari localStorage, default empty array jika tidak ada
+    const itemIndex = cart.findIndex(item => item.id === id); // Cari index item di cart berdasarkan ID
+    if (itemIndex > -1) { // Jika item sudah ada di cart
+        cart[itemIndex].qty += 1; // Tambahkan quantity +1
+    } else { // Jika item belum ada di cart
+        cart.push({ id, qty: 1, notes: "" }); // Tambahkan item baru dengan qty 1 dan notes kosong
     }
-    localStorage.setItem("cart", JSON.stringify(cart));
-    updateDisplay();
-    updateCartItems();
+    localStorage.setItem("cart", JSON.stringify(cart)); // Simpan cart ke localStorage
+    updateDisplay(); // Update tampilan cart count
+    updateCartItems(); // Update item-item di cart
 }
 
-const removeFromCart = (id) => {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const newCart = cart.filter(item => item.id !== id);
-    localStorage.setItem("cart", JSON.stringify(newCart));
-    updateDisplay();
-    updateCartItems();
+const removeFromCart = (id) => { // Fungsi untuk menghapus item dari cart
+    const cart = JSON.parse(localStorage.getItem("cart")) || []; // Parse data cart dari localStorage
+    const newCart = cart.filter(item => item.id !== id); // Filter cart, hapus item dengan ID yang sesuai
+    localStorage.setItem("cart", JSON.stringify(newCart)); // Simpan cart baru ke localStorage
+    updateDisplay(); // Update tampilan cart count
+    updateCartItems(); // Update item-item di cart
 }
 
-function increaseQuantity(id) {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const itemIndex = cart.findIndex(item => item.id === id);
-    if (itemIndex > -1) {
-        cart[itemIndex].qty += 1;
+function increaseQuantity(id) { // Fungsi untuk menambah quantity item
+    const cart = JSON.parse(localStorage.getItem("cart")) || []; // Parse data cart dari localStorage
+    const itemIndex = cart.findIndex(item => item.id === id); // Cari index item di cart
+    if (itemIndex > -1) { // Jika item ditemukan
+        cart[itemIndex].qty += 1; // Tambahkan quantity +1
     }
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart)); // Simpan cart ke localStorage
 
-    const qtyElement = document.querySelector(`[data-id="${id}"]#qty`);
-    if (qtyElement) {
-        let qty = parseInt(qtyElement.textContent, 10);
-        qtyElement.textContent = qty + 1;
+    const qtyElement = document.querySelector(`[data-id="${id}"]#qty`); // Ambil elemen quantity berdasarkan ID
+    if (qtyElement) { // Jika elemen ditemukan
+        let qty = parseInt(qtyElement.textContent, 10); // Parse quantity dari text
+        qtyElement.textContent = qty + 1; // Update quantity di DOM
     }
 
-    calculateTotal();
+    calculateTotal(); // Hitung ulang total
 }
 
-function decreaseQuantity(id) {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const itemIndex = cart.findIndex(item => item.id === id);
-    if (itemIndex > -1) {
-        if (cart[itemIndex].qty > 1) {
-            cart[itemIndex].qty -= 1;
-        } else {
-            cart.splice(itemIndex, 1);
+function decreaseQuantity(id) { // Fungsi untuk mengurangi quantity item
+    const cart = JSON.parse(localStorage.getItem("cart")) || []; // Parse data cart dari localStorage
+    const itemIndex = cart.findIndex(item => item.id === id); // Cari index item di cart
+    if (itemIndex > -1) { // Jika item ditemukan
+        if (cart[itemIndex].qty > 1) { // Jika quantity > 1
+            cart[itemIndex].qty -= 1; // Kurangi quantity -1
+        } else { // Jika quantity = 1
+            cart.splice(itemIndex, 1); // Hapus item dari cart
         }
     }
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart)); // Simpan cart ke localStorage
 
-    const qtyElement = document.querySelector(`[data-id="${id}"]#qty`);
-    if (qtyElement) {
-        let qty = parseInt(qtyElement.textContent, 10);
-        if (qty > 1) {
-            qtyElement.textContent = qty - 1;
-        } else {
-            qtyElement.closest('.flex.gap-4.flex-col').remove();
+    const qtyElement = document.querySelector(`[data-id="${id}"]#qty`); // Ambil elemen quantity berdasarkan ID
+    if (qtyElement) { // Jika elemen ditemukan
+        let qty = parseInt(qtyElement.textContent, 10); // Parse quantity dari text
+        if (qty > 1) { // Jika quantity > 1
+            qtyElement.textContent = qty - 1; // Update quantity di DOM
+        } else { // Jika quantity = 1
+            qtyElement.closest('.flex.gap-4.flex-col').remove(); // Hapus elemen dari DOM
         }
     }
 
-    calculateTotal();
+    calculateTotal(); // Hitung ulang total
 }
-function deleteItem(element) {
-    const cartItem = element.closest('.cart-item');
-    if (cartItem) {
-        const id = cartItem.dataset.id;
-        const cart = JSON.parse(localStorage.getItem("cart")) || [];
-        const itemIndex = cart.findIndex(item => item.id === id);
-        if (itemIndex > -1) {
-            cart.splice(itemIndex, 1);
+function deleteItem(element) { // Fungsi untuk menghapus item dari cart
+    const cartItem = element.closest('.cart-item'); // Ambil elemen cart-item terdekat
+    if (cartItem) { // Jika elemen ditemukan
+        const id = cartItem.dataset.id; // Ambil ID dari data attribute
+        const cart = JSON.parse(localStorage.getItem("cart")) || []; // Parse data cart dari localStorage
+        const itemIndex = cart.findIndex(item => item.id === id); // Cari index item di cart
+        if (itemIndex > -1) { // Jika item ditemukan
+            cart.splice(itemIndex, 1); // Hapus item dari cart
         }
-        localStorage.setItem("cart", JSON.stringify(cart));
-        cartItem.remove();
+        localStorage.setItem("cart", JSON.stringify(cart)); // Simpan cart ke localStorage
+        cartItem.remove(); // Hapus elemen dari DOM
     }
 
-    calculateTotal();
+    calculateTotal(); // Hitung ulang total
 }
 
-function calculateTotal() {
-    const prices = document.querySelectorAll('p[id="price"]');
-    let total = 0;
-    prices.forEach(priceElement => {
-        const price = parseInt(priceElement.textContent.replace(/[^0-9]/g, ''), 10);
-        const qty = parseInt(priceElement.closest('.flex').querySelector('#qty').textContent, 10);
-        total += price * qty;
+function calculateTotal() { // Fungsi untuk menghitung total harga
+    const prices = document.querySelectorAll('p[id="price"]'); // Ambil semua elemen price
+    let total = 0; // Inisialisasi total dengan 0
+    prices.forEach(priceElement => { // Loop setiap price element
+        const price = parseInt(priceElement.textContent.replace(/[^0-9]/g, ''), 10); // Parse harga dari text, hapus semua karakter non-numeric
+        const qty = parseInt(priceElement.closest('.flex').querySelector('#qty').textContent, 10); // Ambil quantity dari elemen terdekat dengan class flex
+        total += price * qty; // Tambahkan price * qty ke total
     });
-    document.getElementById('totalAmount').textContent = `Rp ${total.toLocaleString('id-ID')}`;
+    document.getElementById('totalAmount').textContent = `Rp ${total.toLocaleString('id-ID')}`; // Update total amount dengan format Rupiah Indonesia
 }
 
-const getCart = () => {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    return cart;
+const getCart = () => { // Fungsi untuk mendapatkan data cart
+    const cart = JSON.parse(localStorage.getItem("cart")) || []; // Parse data cart dari localStorage, default empty array jika tidak ada
+    return cart; // Kembalikan cart
 }
 
-const updateDisplay = () => {
-    const cart = getCart();
-    if (cartCountElement) {
-        cartCountElement.textContent = cart.reduce((total, item) => total + item.qty, 0);
+const updateDisplay = () => { // Fungsi untuk update tampilan cart count
+    const cart = getCart(); // Ambil data cart
+    if (cartCountElement) { // Jika elemen cart count ada
+        cartCountElement.textContent = cart.reduce((total, item) => total + item.qty, 0); // Hitung total quantity semua item dan update text
     }
 }
 
-const updateCartItems = () => {
-    const cart = getCart();
+const updateCartItems = () => { // Fungsi untuk update item-item di cart
+    const cart = getCart(); // Ambil data cart
 
-    cart.forEach(item => {
-        const qtyElement = document.querySelector(`[data-id="${item.id}"]#qty`);
-        const notesElement = document.querySelector(`[data-id="${item.id}"]#notes`);
-        if (qtyElement) {
-            qtyElement.textContent = item.qty;
+    cart.forEach(item => { // Loop setiap item di cart
+        const qtyElement = document.querySelector(`[data-id="${item.id}"]#qty`); // Ambil elemen quantity berdasarkan ID
+        const notesElement = document.querySelector(`[data-id="${item.id}"]#notes`); // Ambil elemen notes berdasarkan ID
+        if (qtyElement) { // Jika elemen quantity ditemukan
+            qtyElement.textContent = item.qty; // Update quantity di DOM
         }
-        if (notesElement) {
-            notesElement.value = item.notes;
+        if (notesElement) { // Jika elemen notes ditemukan
+            notesElement.value = item.notes; // Update notes di DOM
         }
     });
 
-    calculateTotal();
+    calculateTotal(); // Hitung ulang total
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    updateDisplay();
-    updateCartItems();
+document.addEventListener('DOMContentLoaded', () => { // Event listener saat DOM sudah loaded
+    updateDisplay(); // Update tampilan cart count
+    updateCartItems(); // Update item-item di cart
 });
 
-document.querySelectorAll('input[name="notes"]').forEach(element => {
-    element.addEventListener('input', event => {
-        const cart = getCart();
-        const itemIndex = cart.findIndex(item => item.id === event.target.closest('[data-id]').dataset.id);
-        if (itemIndex > -1) {
-            cart[itemIndex].notes = event.target.value;
-            localStorage.setItem("cart", JSON.stringify(cart));
+document.querySelectorAll('input[name="notes"]').forEach(element => { // Ambil semua input notes dan loop
+    element.addEventListener('input', event => { // Tambahkan event listener input
+        const cart = getCart(); // Ambil data cart
+        const itemIndex = cart.findIndex(item => item.id === event.target.closest('[data-id]').dataset.id); // Cari index item berdasarkan ID dari elemen terdekat
+        if (itemIndex > -1) { // Jika item ditemukan
+            cart[itemIndex].notes = event.target.value; // Update notes item dengan value dari input
+            localStorage.setItem("cart", JSON.stringify(cart)); // Simpan cart ke localStorage
         }
     });
 });
