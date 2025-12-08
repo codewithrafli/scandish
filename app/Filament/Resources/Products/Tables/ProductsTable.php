@@ -32,12 +32,8 @@ class ProductsTable
                 TextColumn::make('productCategory.name')
                     ->label('Kategori Menu'),
                 ImageColumn::make('image')
-<<<<<<< HEAD
-                    ->label('Foto Menu'),
-=======
                     ->label('Foto Menu')
                     ->disk('public'),
->>>>>>> 4db5b90489ccb9bfcfbb2296fd5b8e4010f67f7e
                 TextColumn::make('price')
                     ->label('Harga Menu')
                     ->formatStateUsing(function (string $state) {
