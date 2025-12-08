@@ -25,6 +25,8 @@ class ProductCategoryForm // Kelas untuk konfigurasi form kategori produk
                 FileUpload::make('icon') // Membuat file upload untuk icon
                     ->label('Ikon Kategori') // Set label menjadi 'Ikon Kategori'
                     ->disk('public') // Set disk penyimpanan menjadi 'public'
+                    ->image() // Hanya terima file gambar dan tampilkan preview
+                    ->visibility('public') // Set visibility menjadi public agar bisa diakses
                     ->required(), // Field wajib diisi
             ]);
     }

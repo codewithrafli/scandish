@@ -24,6 +24,7 @@
     <script src="{{ asset('assets/js/index.js') }}"></script>
 
     @yield('script')
+    @stack('script')
 </body>
 
 </html>

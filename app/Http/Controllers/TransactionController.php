@@ -39,12 +39,38 @@ class TransactionController extends Controller // Kelas controller untuk transac
             abort(404); // Tampilkan error 404
         }
 
+        // Validasi dan sanitasi input
+        // Sanitasi table_number terlebih dahulu
+        $tableNumber = $request->table_number; // Ambil nilai table_number
+        if (!is_numeric($tableNumber)) { // Jika bukan numeric
+            return redirect()->back()->withErrors(['table_number' => 'Table number must be a valid number'])->withInput(); // Redirect back dengan error
+        }
+        $tableNumber = (int) filter_var($tableNumber, FILTER_SANITIZE_NUMBER_INT); // Sanitasi dan cast ke integer
+        if ($tableNumber < 1) { // Jika kurang dari 1
+            return redirect()->back()->withErrors(['table_number' => 'Table number must be at least 1'])->withInput(); // Redirect back dengan error
+        }
+
+        $request->validate([ // Validasi request
+            'name' => 'required|string|max:255', // Nama wajib diisi, string, max 255 karakter
+            'phone_number' => 'required|string|max:20', // Phone number wajib diisi, string, max 20 karakter
+            'table_number' => 'required|integer|min:1', // Table number wajib diisi, integer, minimal 1
+            'payment_method' => 'required|in:cash,midtrans', // Payment method wajib diisi, harus cash atau midtrans
+            'cart' => 'required|string', // Cart wajib diisi, string (JSON)
+        ]);
+
         $carts = json_decode($request->cart, true); // Decode JSON cart menjadi array
+
+        if (!$carts || !is_array($carts) || empty($carts)) { // Jika cart kosong atau tidak valid
+            return redirect()->back()->withErrors(['cart' => 'Cart is empty'])->withInput(); // Redirect back dengan error
+        }
 
         $totalPrice = 0; // Inisialisasi total harga dengan 0
 
         foreach ($carts as $cart) { // Loop setiap item di cart
             $product = Product::where('id', $cart['id'])->first(); // Cari produk berdasarkan ID
+            if (!$product) { // Jika produk tidak ditemukan
+                return redirect()->back()->withErrors(['cart' => 'Product not found'])->withInput(); // Redirect back dengan error
+            }
             $totalPrice += $product->price * $cart['qty']; // Tambahkan harga produk dikali quantity ke total
         }
 
@@ -52,7 +78,7 @@ class TransactionController extends Controller // Kelas controller untuk transac
             'code' => 'TRX-' . mt_rand(10000, 99999), // Generate kode transaksi random
             'name' => $request->name, // Nama customer
             'phone_number' => $request->phone_number, // Nomor HP customer
-            'table_number' => $request->table_number, // Nomor meja
+            'table_number' => $tableNumber, // Nomor meja (gunakan nilai yang sudah disanitasi)
             'payment_method' => $request->payment_method, // Metode pembayaran
             'total_price' => $totalPrice, // Total harga
             'status' => 'pending' // Status awal pending

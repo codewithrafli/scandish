@@ -27,6 +27,8 @@ class ProductResource extends Resource // Kelas resource untuk Product
 
     protected static string | UnitEnum | null $navigationGroup = 'Manajemen Menu'; // Set group navigasi menjadi 'Manajemen Menu'
 
+    protected static ?int $navigationSort = 2; // Set urutan navigasi menjadi 2 (setelah Product Category)
+
     public static function getEloquentQuery(): Builder // Method untuk mendapatkan query builder
     {
         $user = Auth::user(); // Ambil user yang sedang login

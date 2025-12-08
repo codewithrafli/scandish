@@ -16,12 +16,17 @@ use Filament\Tables\Table; // Import Table class
 use Illuminate\Database\Eloquent\Builder; // Import Builder untuk query
 use Illuminate\Database\Eloquent\SoftDeletingScope; // Import SoftDeletingScope
 use Illuminate\Support\Facades\Auth; // Import Auth facade untuk autentikasi
+use UnitEnum; // Import UnitEnum type
 
 class TransactionResource extends Resource // Kelas resource untuk Transaction
 {
     protected static ?string $model = Transaction::class; // Set model yang digunakan
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::CurrencyDollar; // Set icon navigasi menjadi CurrencyDollar
+
+    protected static string|UnitEnum|null $navigationGroup = 'Manajemen Menu'; // Set group navigasi menjadi 'Manajemen Menu'
+
+    protected static ?int $navigationSort = 3; // Set urutan navigasi menjadi 3 (setelah Product)
 
     public static function getEloquentQuery(): Builder // Method untuk mendapatkan query builder
     {

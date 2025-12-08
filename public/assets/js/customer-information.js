@@ -69,7 +69,40 @@ const cartData = document.getElementById('cart-data'); // Ambil input hidden den
 
 paymentForm.addEventListener('submit', (event) => { // Event listener saat form di-submit
     event.preventDefault(); // Prevent default form submission
+
+    // Validasi table_number
+    const tableNumberInput = document.getElementById('table_number'); // Ambil input table_number
+    if (tableNumberInput) { // Jika input ditemukan
+        const tableNumber = tableNumberInput.value.trim(); // Ambil value dan trim whitespace
+        if (!tableNumber) { // Jika kosong
+            alert('Please enter a table number'); // Tampilkan alert
+            tableNumberInput.focus(); // Focus ke input
+            return; // Stop execution
+        }
+        // Cek apakah value adalah angka
+        if (!/^\d+$/.test(tableNumber)) { // Jika bukan angka
+            alert('Table number must be a valid number'); // Tampilkan alert
+            tableNumberInput.focus(); // Focus ke input
+            tableNumberInput.select(); // Select text di input
+            return; // Stop execution
+        }
+        // Cek apakah angka >= 1
+        const tableNum = parseInt(tableNumber, 10); // Parse ke integer
+        if (isNaN(tableNum) || tableNum < 1) { // Jika bukan angka atau kurang dari 1
+            alert('Table number must be at least 1'); // Tampilkan alert
+            tableNumberInput.focus(); // Focus ke input
+            tableNumberInput.select(); // Select text di input
+            return; // Stop execution
+        }
+        // Set value yang sudah divalidasi kembali ke input
+        tableNumberInput.value = tableNum; // Set value dengan integer yang sudah divalidasi
+    }
+
     const cart = JSON.parse(localStorage.getItem("cart")) || []; // Parse data cart dari localStorage
+    if (!cart || cart.length === 0) { // Jika cart kosong
+        alert('Your cart is empty'); // Tampilkan alert
+        return; // Stop execution
+    }
 
     cartData.value = JSON.stringify(cart); // Set value cart-data dengan JSON string dari cart
 

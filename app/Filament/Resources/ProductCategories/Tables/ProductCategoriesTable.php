@@ -29,7 +29,8 @@ class ProductCategoriesTable // Kelas untuk konfigurasi tabel kategori produk
                     ->label('Nama Kategori'), // Set label kolom menjadi 'Nama Kategori'
                 ImageColumn::make('icon') // Membuat kolom gambar untuk ikon kategori
                     ->label('Ikon Kategori') // Set label kolom menjadi 'Ikon Kategori'
-                    ->disk('public'), // Set disk penyimpanan menjadi 'public'
+                    ->disk('public') // Set disk penyimpanan menjadi 'public'
+                    ->url(fn($record) => $record->icon ? asset('storage/' . $record->icon) : null), // Generate URL untuk gambar menggunakan asset helper
             ])
             ->filters([ // Mendefinisikan filter-filter yang tersedia di tabel
                 TrashedFilter::make(), // Membuat filter untuk menampilkan data yang dihapus (soft delete)

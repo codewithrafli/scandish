@@ -52,7 +52,8 @@ class ProductForm // Kelas untuk konfigurasi form produk
                 FileUpload::make('image') // Membuat file upload untuk image
                     ->label('Foto Menu') // Set label menjadi 'Foto Menu'
                     ->disk('public') // Set disk penyimpanan menjadi 'public'
-                    ->image() // Hanya terima file gambar
+                    ->image() // Hanya terima file gambar dan tampilkan preview
+                    ->visibility('public') // Set visibility menjadi public agar bisa diakses
                     ->required(), // Field wajib diisi
                 TextInput::make('name') // Membuat text input untuk name
                     ->label('Nama Menu') // Set label menjadi 'Nama Menu'
@@ -62,6 +63,7 @@ class ProductForm // Kelas untuk konfigurasi form produk
                     ->required(), // Field wajib diisi
                 TextInput::make('price') // Membuat text input untuk price
                     ->label('Harga Menu') // Set label menjadi 'Harga Menu'
+                    ->prefix('Rp') // Tambahkan prefix 'Rp' di depan input
                     ->numeric() // Hanya terima angka
                     ->required(), // Field wajib diisi
                 TextInput::make('rating') // Membuat text input untuk rating

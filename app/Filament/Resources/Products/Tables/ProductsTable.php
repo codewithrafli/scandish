@@ -33,7 +33,8 @@ class ProductsTable // Kelas untuk konfigurasi tabel produk
                     ->label('Kategori Menu'), // Set label kolom menjadi 'Kategori Menu'
                 ImageColumn::make('image') // Membuat kolom gambar untuk foto produk
                     ->label('Foto Menu') // Set label kolom menjadi 'Foto Menu'
-                    ->disk('public'), // Set disk penyimpanan menjadi 'public'
+                    ->disk('public') // Set disk penyimpanan menjadi 'public'
+                    ->url(fn($record) => $record->image ? asset('storage/' . $record->image) : null), // Generate URL untuk gambar menggunakan asset helper
                 TextColumn::make('price') // Membuat kolom teks untuk harga produk
                     ->label('Harga Menu') // Set label kolom menjadi 'Harga Menu'
                     ->formatStateUsing(function (string $state) { // Format nilai state dengan fungsi callback
