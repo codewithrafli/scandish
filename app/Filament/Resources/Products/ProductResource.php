@@ -15,6 +15,7 @@ use Filament\Schemas\Schema; // Import Schema class
 use Filament\Support\Icons\Heroicon; // Import Heroicon untuk icon
 use Filament\Tables\Table; // Import Table class
 use Illuminate\Database\Eloquent\Builder; // Import Builder untuk query
+use Illuminate\Database\Eloquent\Model; // Import Model class
 use Illuminate\Database\Eloquent\SoftDeletingScope; // Import SoftDeletingScope
 use Illuminate\Support\Facades\Auth; // Import Auth facade untuk autentikasi
 use UnitEnum; // Import UnitEnum type
@@ -33,6 +34,10 @@ class ProductResource extends Resource // Kelas resource untuk Product
     {
         $user = Auth::user(); // Ambil user yang sedang login
 
+        if (!$user) { // Jika user tidak ditemukan
+            return parent::getEloquentQuery()->whereRaw('1 = 0'); // Return query kosong (tidak ada data)
+        }
+
         if ($user->role === 'admin') { // Jika user adalah admin
             return parent::getEloquentQuery(); // Kembalikan semua query tanpa filter
         }
@@ -42,19 +47,26 @@ class ProductResource extends Resource // Kelas resource untuk Product
 
     public static function canCreate(): bool // Method untuk menentukan apakah user bisa create
     {
-        if (Auth::user()->role === 'admin') { // Jika user adalah admin
+        $user = Auth::user(); // Ambil user yang sedang login
+
+        if (!$user) { // Jika user tidak ditemukan
+            return false; // Tidak bisa create
+        }
+
+        if ($user->role === 'admin') { // Jika user adalah admin
             return true; // Admin selalu bisa create
         }
 
-        $subcription = Subscription::where('user_id', Auth::user()->id) // Cari subscription user
+        $subcription = Subscription::where('user_id', $user->id) // Cari subscription user
             ->where('end_date', '>', now()) // Yang masih aktif (end_date > sekarang)
             ->where('is_active', true) // Dan is_active = true
             ->latest() // Ambil yang terbaru
             ->first(); // Ambil pertama
 
-        $countProduct = Product::where('user_id', Auth::user()->id)->count(); // Hitung jumlah produk user
+        $countProduct = Product::where('user_id', $user->id)->count(); // Hitung jumlah produk user
 
-        return !($countProduct >= 1 && !$subcription); // Bisa create jika: (jumlah produk < 1) ATAU (ada subscription aktif)
+        // Bisa create jika: (jumlah produk < 1) ATAU (ada subscription aktif)
+        return !($countProduct >= 1 && !$subcription); // Return true jika bisa create, false jika tidak
     }
 
     public static function form(Schema $schema): Schema // Method untuk mendapatkan form schema
@@ -89,5 +101,14 @@ class ProductResource extends Resource // Kelas resource untuk Product
             ->withoutGlobalScopes([ // Tanpa global scopes
                 SoftDeletingScope::class, // Termasuk soft deleted records
             ]);
+    }
+
+    public static function getGlobalSearchResultDetails(Model $record): array // Method untuk menampilkan detail di global search results
+    {
+        /** @var Product $record */ // Type hint untuk IDE
+        return [ // Mengembalikan array detail
+            'Kategori' => $record->productCategory->name ?? 'N/A', // Tampilkan kategori
+            'Harga' => 'Rp ' . number_format($record->price), // Tampilkan harga
+        ];
     }
 }

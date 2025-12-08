@@ -1,8 +1,56 @@
 let cartCountElement = document.querySelector("#cart-count"); // Ambil elemen untuk menampilkan jumlah item di cart
 
-const swiper = new Swiper('.swiper', { // Inisialisasi Swiper untuk carousel/slider
-    slidesPerView: "auto", // Set jumlah slide yang terlihat otomatis
-    spaceBetween: 20, // Set jarak antar slide 20px
+// Inisialisasi Swiper setelah DOM ready
+document.addEventListener('DOMContentLoaded', function () { // Event listener saat DOM sudah loaded
+    // Inisialisasi Swiper untuk Categories
+    if (document.querySelector('.categoriesSwiper')) { // Jika elemen categoriesSwiper ditemukan
+        const categoriesSwiper = new Swiper('.categoriesSwiper', { // Inisialisasi Swiper untuk categories slider
+            slidesPerView: "auto", // Set jumlah slide yang terlihat otomatis
+            spaceBetween: 20, // Set jarak antar slide 20px
+            freeMode: true, // Enable free mode untuk smooth scrolling tanpa snap
+            freeModeMomentum: true, // Enable momentum untuk smooth scrolling
+            freeModeMomentumRatio: 0.5, // Set ratio momentum (0.5 = lebih smooth)
+            freeModeSticky: false, // Disable sticky untuk smooth scrolling
+            speed: 300, // Set kecepatan transisi menjadi 300ms untuk smooth animation
+            touchRatio: 1, // Set touch ratio menjadi 1 untuk responsive touch
+            grabCursor: true, // Tampilkan cursor grab saat hover
+            resistance: true, // Enable resistance saat scroll di ujung
+            resistanceRatio: 0.85, // Set resistance ratio untuk feel yang lebih natural
+            mousewheel: { // Enable mousewheel untuk scroll dengan mouse
+                enabled: true, // Enable mousewheel
+                forceToAxis: true, // Force scroll ke axis horizontal
+            },
+            keyboard: { // Enable keyboard navigation
+                enabled: true, // Enable keyboard
+                onlyInViewport: true, // Hanya aktif saat dalam viewport
+            },
+        });
+    }
+
+    // Inisialisasi Swiper untuk Favorites
+    if (document.querySelector('.favoritesSwiper')) { // Jika elemen favoritesSwiper ditemukan
+        const favoritesSwiper = new Swiper('.favoritesSwiper', { // Inisialisasi Swiper untuk favorites slider
+            slidesPerView: "auto", // Set jumlah slide yang terlihat otomatis
+            spaceBetween: 20, // Set jarak antar slide 20px
+            freeMode: true, // Enable free mode untuk smooth scrolling tanpa snap
+            freeModeMomentum: true, // Enable momentum untuk smooth scrolling
+            freeModeMomentumRatio: 0.5, // Set ratio momentum (0.5 = lebih smooth)
+            freeModeSticky: false, // Disable sticky untuk smooth scrolling
+            speed: 300, // Set kecepatan transisi menjadi 300ms untuk smooth animation
+            touchRatio: 1, // Set touch ratio menjadi 1 untuk responsive touch
+            grabCursor: true, // Tampilkan cursor grab saat hover
+            resistance: true, // Enable resistance saat scroll di ujung
+            resistanceRatio: 0.85, // Set resistance ratio untuk feel yang lebih natural
+            mousewheel: { // Enable mousewheel untuk scroll dengan mouse
+                enabled: true, // Enable mousewheel
+                forceToAxis: true, // Force scroll ke axis horizontal
+            },
+            keyboard: { // Enable keyboard navigation
+                enabled: true, // Enable keyboard
+                onlyInViewport: true, // Hanya aktif saat dalam viewport
+            },
+        });
+    }
 });
 
 const addToCart = (id) => { // Fungsi untuk menambahkan item ke cart

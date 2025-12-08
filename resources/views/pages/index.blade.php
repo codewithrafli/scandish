@@ -1,5 +1,34 @@
 @extends('layouts.app')
 
+@push('style')
+<style>
+    /* Style untuk memastikan slider bisa di-scroll dengan smooth */
+    .categoriesSwiper,
+    .favoritesSwiper {
+        overflow: hidden !important;
+        /* Pastikan overflow hidden */
+        touch-action: pan-y pan-x !important;
+        /* Enable touch action untuk scroll */
+        -webkit-overflow-scrolling: touch !important;
+        /* Smooth scrolling untuk iOS */
+    }
+
+    .categoriesSwiper .swiper-wrapper,
+    .favoritesSwiper .swiper-wrapper {
+        display: flex !important;
+        /* Pastikan display flex */
+        will-change: transform;
+        /* Optimize untuk transform */
+    }
+
+    .categoriesSwiper .swiper-slide,
+    .favoritesSwiper .swiper-slide {
+        flex-shrink: 0 !important;
+        /* Pastikan slide tidak shrink */
+    }
+</style>
+@endpush
+
 @section('content')
 <div id="Background"
     class="absolute top-0 w-full h-[170px] rounded-b-[45px] bg-[linear-gradient(90deg,#FF923C_0%,#FF801A_100%)]">
@@ -19,15 +48,17 @@
 
     <h1 class="text-white font-[600] text-2xl leading-[30px] mt-[20px]">Order Delicious Meal!</h1>
 
-    <div class="absolute bottom-0 left-0 right-0 w-full gap-2 px-5">
-        <form action="{{ route('product.find-results', $store->username) }}" method="GET" id="searchForm">
-            <label
-                class="flex items-center w-full rounded-full p-[8px_8px] gap-3 bg-white ring-1 ring-[#F1F2F6] focus-within:ring-[#F3AF00] transition-all duration-300">
-                <img src="assets/images/icons/ic_search.svg" class="w-8 h-8 flex shrink-0" alt="icon">
+    <div class="absolute bottom-0 left-0 right-0 w-full gap-2 px-5 z-10">
+        <form action="{{ route('product.find-results', $store->username) }}" method="GET" id="searchForm" class="w-full">
+            <div
+                class="flex items-center w-full rounded-full p-[8px_8px] gap-3 bg-white ring-1 ring-[#F1F2F6] focus-within:ring-[#F3AF00] transition-all duration-300 cursor-text">
+                <button type="submit" class="flex items-center justify-center shrink-0 border-0 bg-transparent p-0 cursor-pointer focus:outline-none">
+                    <img src="{{ asset('assets/images/icons/ic_search.svg') }}" class="w-8 h-8 flex shrink-0" alt="icon">
+                </button>
                 <input type="text" name="search" id="searchInput"
-                    class="appearance-none outline-none w-full font-semibold placeholder:text-ngekos-grey placeholder:font-light"
-                    placeholder="Search menu, or etc..." autocomplete="off">
-            </label>
+                    class="appearance-none outline-none w-full font-semibold placeholder:text-ngekos-grey placeholder:font-light bg-transparent"
+                    placeholder="Search menu, or etc..." autocomplete="off" value="{{ request('search') }}" required>
+            </div>
         </form>
     </div>
 </div>
@@ -38,7 +69,7 @@
         <a href="#" class="text-[#FF801A] text-sm ">See All</a>
     </div>
 
-    <div class="swiper w-full">
+    <div class="swiper categoriesSwiper w-full overflow-hidden">
         <div class="swiper-wrapper mt-[20px]">
             @foreach ($store->productCategories as $category)
             <a href="{{ route('product.find-results', $store->username) . '?category=' . $category->slug }}"
@@ -65,7 +96,7 @@
         <a href="#" class="text-[#FF801A] text-sm ">See All</a>
     </div>
 
-    <div class="swiper w-full">
+    <div class="swiper favoritesSwiper w-full overflow-hidden">
         <div class="swiper-wrapper mt-[10px]">
             @foreach ($populars as $popular)
             <div class="swiper-slide !w-fit">
@@ -168,28 +199,30 @@
         const searchForm = document.getElementById('searchForm'); // Ambil elemen search form
 
         if (searchInput && searchForm) { // Jika elemen ditemukan
-            // Handle Enter key press
-            searchInput.addEventListener('keypress', function(e) { // Event listener untuk keypress
-                if (e.key === 'Enter') { // Jika tombol Enter ditekan
-                    e.preventDefault(); // Prevent default behavior
-                    const searchValue = searchInput.value.trim(); // Ambil value search dan trim whitespace
-                    if (searchValue) { // Jika ada value
-                        searchForm.submit(); // Submit form
-                    }
-                }
-            });
-
-            // Optional: Handle search icon click
-            const searchIcon = searchInput.closest('label').querySelector('img'); // Ambil icon search
-            if (searchIcon) { // Jika icon ditemukan
-                searchIcon.style.cursor = 'pointer'; // Set cursor menjadi pointer
-                searchIcon.addEventListener('click', function() { // Event listener untuk click
-                    const searchValue = searchInput.value.trim(); // Ambil value search dan trim whitespace
-                    if (searchValue) { // Jika ada value
-                        searchForm.submit(); // Submit form
+            // Handle click pada container untuk focus input
+            const searchContainer = searchInput.closest('div.flex'); // Ambil container yang membungkus input
+            if (searchContainer) { // Jika container ditemukan
+                searchContainer.addEventListener('click', function(e) { // Event listener untuk click pada container
+                    // Hanya focus jika yang diklik adalah container atau area kosong, bukan input atau button
+                    if (e.target === searchContainer || (e.target.tagName !== 'INPUT' && e.target.tagName !== 'BUTTON' && e.target.tagName !== 'IMG')) {
+                        searchInput.focus(); // Focus ke input
                     }
                 });
             }
+
+            // Handle form submit - validasi dan trim value
+            searchForm.addEventListener('submit', function(e) { // Event listener untuk form submit
+                const searchValue = searchInput.value.trim(); // Ambil value search dan trim whitespace
+                if (!searchValue) { // Jika tidak ada value
+                    e.preventDefault(); // Prevent form submission jika kosong
+                    e.stopPropagation(); // Stop event propagation
+                    searchInput.focus(); // Focus ke input
+                    return false; // Return false untuk mencegah submit
+                }
+                // Update input value dengan trimmed value sebelum submit
+                searchInput.value = searchValue; // Set value dengan trimmed value
+                // Biarkan form submit secara natural - tidak perlu preventDefault
+            });
         }
     });
 </script>

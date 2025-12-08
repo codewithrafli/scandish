@@ -14,6 +14,7 @@ use Filament\Schemas\Schema; // Import Schema class
 use Filament\Support\Icons\Heroicon; // Import Heroicon untuk icon
 use Filament\Tables\Table; // Import Table class
 use Illuminate\Database\Eloquent\Builder; // Import Builder untuk query
+use Illuminate\Database\Eloquent\Model; // Import Model class
 use Illuminate\Database\Eloquent\SoftDeletingScope; // Import SoftDeletingScope
 use Illuminate\Support\Facades\Auth; // Import Auth facade untuk autentikasi
 use UnitEnum; // Import UnitEnum type
@@ -71,5 +72,13 @@ class ProductCategoryResource extends Resource // Kelas resource untuk ProductCa
             ->withoutGlobalScopes([ // Tanpa global scopes
                 SoftDeletingScope::class, // Termasuk soft deleted records
             ]);
+    }
+
+    public static function getGlobalSearchResultDetails(Model $record): array // Method untuk menampilkan detail di global search results
+    {
+        /** @var ProductCategory $record */ // Type hint untuk IDE
+        return [ // Mengembalikan array detail
+            'Slug' => $record->slug ?? 'N/A', // Tampilkan slug
+        ];
     }
 }
