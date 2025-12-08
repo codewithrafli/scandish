@@ -188,6 +188,12 @@
     </div>
 </div>
 
+<div id="toast" class="toast toast--hidden">
+    <div class="toast__content">
+        <span id="toast-message">Berhasil ditambahkan ke keranjang</span>
+    </div>
+</div>
+
 @include('includes.navigation')
 @endsection
 

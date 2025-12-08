@@ -53,19 +53,20 @@ document.addEventListener('DOMContentLoaded', function () { // Event listener sa
     }
 });
 
-const addToCart = (id) => { // Fungsi untuk menambahkan item ke cart
-    event.preventDefault(); // Prevent default behavior
+const addToCart = (id) => {
+    event.preventDefault();
 
-    const cart = JSON.parse(localStorage.getItem("cart")) || []; // Parse data cart dari localStorage, default empty array jika tidak ada
-    const itemIndex = cart.findIndex(item => item.id === id); // Cari index item di cart berdasarkan ID
-    if (itemIndex > -1) { // Jika item sudah ada di cart
-        cart[itemIndex].qty += 1; // Tambahkan quantity +1
-    } else { // Jika item belum ada di cart
-        cart.push({ id, qty: 1, notes: "" }); // Tambahkan item baru dengan qty 1 dan notes kosong
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const itemIndex = cart.findIndex(item => item.id === id);
+    if (itemIndex > -1) {
+        cart[itemIndex].qty += 1;
+    } else {
+        cart.push({ id, qty: 1, notes: "" });
     }
-    localStorage.setItem("cart", JSON.stringify(cart)); // Simpan cart ke localStorage
-    updateDisplay(); // Update tampilan cart count
-    updateCartItems(); // Update item-item di cart
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateDisplay();
+    updateCartItems();
+    showToast("Berhasil ditambahkan ke keranjang", "success");
 }
 
 const removeFromCart = (id) => { // Fungsi untuk menghapus item dari cart
@@ -133,15 +134,19 @@ function deleteItem(element) { // Fungsi untuk menghapus item dari cart
     calculateTotal(); // Hitung ulang total
 }
 
-function calculateTotal() { // Fungsi untuk menghitung total harga
-    const prices = document.querySelectorAll('p[id="price"]'); // Ambil semua elemen price
-    let total = 0; // Inisialisasi total dengan 0
-    prices.forEach(priceElement => { // Loop setiap price element
-        const price = parseInt(priceElement.textContent.replace(/[^0-9]/g, ''), 10); // Parse harga dari text, hapus semua karakter non-numeric
-        const qty = parseInt(priceElement.closest('.flex').querySelector('#qty').textContent, 10); // Ambil quantity dari elemen terdekat dengan class flex
-        total += price * qty; // Tambahkan price * qty ke total
+function calculateTotal() {
+    const prices = document.querySelectorAll('p[id="price"]');
+    let total = 0;
+    prices.forEach(priceElement => {
+        const price = parseInt(priceElement.textContent.replace(/[^0-9]/g, ''), 10);
+        const qtyEl = priceElement.closest('.flex')?.querySelector('#qty');
+        const qty = qtyEl ? parseInt(qtyEl.textContent, 10) : 0;
+        total += price * qty;
     });
-    document.getElementById('totalAmount').textContent = `Rp ${total.toLocaleString('id-ID')}`; // Update total amount dengan format Rupiah Indonesia
+    const totalAmountEl = document.getElementById('totalAmount');
+    if (totalAmountEl) {
+        totalAmountEl.textContent = `Rp ${total.toLocaleString('id-ID')}`;
+    }
 }
 
 const getCart = () => { // Fungsi untuk mendapatkan data cart
@@ -189,3 +194,16 @@ document.querySelectorAll('input[name="notes"]').forEach(element => { // Ambil s
     });
 });
 
+function showToast(message, type = "success") {
+    const toast = document.getElementById("toast");
+    const messageEl = document.getElementById("toast-message");
+    if (!toast || !messageEl) return;
+    messageEl.textContent = message;
+    toast.classList.remove("toast--hidden");
+    toast.classList.add("toast--" + type, "toast--visible");
+    clearTimeout(toast._hideTimeout);
+    toast._hideTimeout = setTimeout(() => {
+        toast.classList.remove("toast--visible", "toast--" + type);
+        toast.classList.add("toast--hidden");
+    }, 2000);
+}
