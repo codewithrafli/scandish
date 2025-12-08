@@ -51,6 +51,10 @@ class ProductForm
                     ->hidden(fn() => Auth::user()->role === 'admin'),
                 FileUpload::make('image')
                     ->label('Foto Menu')
+<<<<<<< HEAD
+=======
+                    ->disk('public')
+>>>>>>> 4db5b90489ccb9bfcfbb2296fd5b8e4010f67f7e
                     ->image()
                     ->required(),
                 TextInput::make('name')

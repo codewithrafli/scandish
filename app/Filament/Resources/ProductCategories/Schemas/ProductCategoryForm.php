@@ -24,6 +24,10 @@ class ProductCategoryForm
                     ->required(),
                 FileUpload::make('icon')
                     ->label('Ikon Kategori')
+<<<<<<< HEAD
+=======
+                    ->disk('public')
+>>>>>>> 4db5b90489ccb9bfcfbb2296fd5b8e4010f67f7e
                     ->required(),
             ]);
     }
