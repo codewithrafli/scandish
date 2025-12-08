@@ -24,9 +24,7 @@ class TransactionResource extends Resource // Kelas resource untuk Transaction
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::CurrencyDollar; // Set icon navigasi menjadi CurrencyDollar
 
-    protected static string|UnitEnum|null $navigationGroup = 'Manajemen Menu'; // Set group navigasi menjadi 'Manajemen Menu'
-
-    protected static ?int $navigationSort = 3; // Set urutan navigasi menjadi 3 (setelah Product)
+    protected static ?int $navigationSort = 3; // Set urutan navigasi menjadi 3 (setelah Product dan Subscriptions)
 
     public static function getEloquentQuery(): Builder // Method untuk mendapatkan query builder
     {
