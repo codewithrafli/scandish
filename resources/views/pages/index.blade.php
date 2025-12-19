@@ -85,13 +85,13 @@
     </div>
 </div>
 
-<div id="Favorites" class="relative flex flex-col px-5 mt-[20px]">
+<div id="Favorites" class="relative flex flex-col px-5 mt-8">
     <div class="flex items-end">
         <h1 class="text-[#353535] font-[500] text-lg">Menu Favorite</h1>
     </div>
 
     <div class="swiper favoritesSwiper w-full overflow-hidden">
-        <div class="swiper-wrapper mt-[10px]">
+        <div class="swiper-wrapper mt-6">
             @foreach ($populars as $popular)
             <div class="swiper-slide !w-fit">
                 <a href="{{ route('product.show', ['username' => $store->username, 'id' => $popular->id]) }}"
@@ -141,7 +141,7 @@
     </div>
 </div>
 
-<div id="Recomendations" class="relative flex flex-col px-5 mt-[20px]">
+<div id="Recomendations" class="relative flex flex-col px-5 mt-8">
     <div class="flex items-end">
         <h1 class="text-[#353535] font-[500] text-lg">Chef's Recommendations</h1>
     </div>
