@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emenu</title>
+    <link rel="icon" type="image/svg+xml" href="{{ asset('assets/images/icons/logo.svg') }}?v={{ filemtime(public_path('assets/images/icons/logo.svg')) }}">
+    <link rel="apple-touch-icon" href="{{ asset('assets/images/icons/logo.svg') }}?v={{ filemtime(public_path('assets/images/icons/logo.svg')) }}">
 
     <link rel="stylesheet" href="{{ asset('assets/output.css') }}">
 

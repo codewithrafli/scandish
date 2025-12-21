@@ -30,6 +30,8 @@ class AdminPanelProvider extends PanelProvider // Kelas provider untuk admin pan
             ->path('admin') // Set path URL menjadi '/admin'
             ->login() // Enable login page
             ->registration(Register::class) // Set custom registration page
+            ->brandLogo(asset('assets/images/icons/logo.svg'))
+            ->brandLogoHeight('2rem')
             ->colors([ // Set warna theme
                 'primary' => Color::Amber, // Set warna primary menjadi Amber
             ])
