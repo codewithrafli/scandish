@@ -41,7 +41,13 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something()
-{
-    // ..
+if (!function_exists('createAdmin')) {
+    function createAdmin(): \App\Models\User
+    {
+        return \App\Models\User::withoutEvents(fn () => \App\Models\User::factory()->create([
+            'email' => 'admin@example.com',
+            'password' => 'password',
+            'role' => 'admin',
+        ]));
+    }
 }
