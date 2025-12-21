@@ -11,6 +11,11 @@
         /* Enable touch action untuk scroll */
         -webkit-overflow-scrolling: touch !important;
         /* Smooth scrolling untuk iOS */
+        scrollbar-width: none !important;
+    }
+    .categoriesSwiper::-webkit-scrollbar,
+    .favoritesSwiper::-webkit-scrollbar {
+        display: none !important;
     }
 
     .categoriesSwiper .swiper-wrapper,
@@ -106,7 +111,7 @@
                             <!-- rating -->
                             <div
                                 class="absolute top-5 right-5 flex items-center gap-1 bg-white px-[8px] py-[4px] rounded-full">
-                                <img src="assets/images/icons/ic_star.svg" alt="rating" class="w-4 h-4">
+                                <img src="{{ asset('assets/images/icons/ic_star.svg') }}" alt="rating" class="w-4 h-4">
                                 <p class="text-sm">{{ $popular->rating }}</p>
                             </div>
                         </div>
@@ -130,7 +135,7 @@
                             <button type="button"
                                 class="flex items-center justify-center w-[24px] h-[24px] rounded-full bg-transparent"
                                 data-id="{{ $popular->id }}" onclick="addToCart(this.dataset.id)">
-                                <img src="assets/images/icons/ic_plus.svg" class="w-full h-full" alt="icon">
+                                <img src="{{ asset('assets/images/icons/ic_plus.svg') }}" class="w-full h-full" alt="icon">
                             </button>
                         </div>
                     </div>
