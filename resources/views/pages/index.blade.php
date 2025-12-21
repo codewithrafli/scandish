@@ -40,10 +40,6 @@
             <p class="text-white text-sm">Welcome To,</p>
             <h1 class="text-white font-semibold">{{ $store->name }}</h1>
         </div>
-        <a href="#"
-            class="w-12 h-12 flex items-center justify-center shrink-0 rounded-full overflow-hidden bg-white bg-opacity-20">
-            <img src="assets/images/icons/ic_bell.svg" class="w-[28px] h-[28px]" alt="icon">
-        </a>
     </div>
 
     <h1 class="text-white font-[600] text-2xl leading-[30px] mt-[20px]">Order Delicious Meal!</h1>
@@ -64,9 +60,8 @@
 </div>
 
 <div id="Categories" class="relative flex flex-col px-5 mt-[20px]">
-    <div class="flex items-end justify-between ">
+    <div class="flex items-end">
         <h1 class="text-[#353535] font-[500] text-lg">Explore Categories</h1>
-        <a href="#" class="text-[#FF801A] text-sm ">See All</a>
     </div>
 
     <div class="swiper categoriesSwiper w-full overflow-hidden">
@@ -90,14 +85,13 @@
     </div>
 </div>
 
-<div id="Favorites" class="relative flex flex-col px-5 mt-[20px]">
-    <div class="flex items-end justify-between">
+<div id="Favorites" class="relative flex flex-col px-5 mt-8">
+    <div class="flex items-end">
         <h1 class="text-[#353535] font-[500] text-lg">Menu Favorite</h1>
-        <a href="#" class="text-[#FF801A] text-sm ">See All</a>
     </div>
 
     <div class="swiper favoritesSwiper w-full overflow-hidden">
-        <div class="swiper-wrapper mt-[10px]">
+        <div class="swiper-wrapper mt-6">
             @foreach ($populars as $popular)
             <div class="swiper-slide !w-fit">
                 <a href="{{ route('product.show', ['username' => $store->username, 'id' => $popular->id]) }}"
@@ -147,10 +141,9 @@
     </div>
 </div>
 
-<div id="Recomendations" class="relative flex flex-col px-5 mt-[20px]">
-    <div class="flex items-end justify-between ">
+<div id="Recomendations" class="relative flex flex-col px-5 mt-8">
+    <div class="flex items-end">
         <h1 class="text-[#353535] font-[500] text-lg">Chef's Recommendations</h1>
-        <a href="#" class="text-[#FF801A] text-sm ">See All</a>
     </div>
     <div class="flex flex-col gap-4 mt-[10px]">
         @foreach ($products as $product)
