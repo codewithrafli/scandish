@@ -10,11 +10,6 @@
                         <div class="bg-white p-2 rounded-lg">
                             {!! SimpleSoftwareIO\QrCode\Facades\QrCode::size(180)->margin(1)->generate(url('/' . Auth::user()->username)) !!}
                         </div>
-
-                        <div class="text-center">
-                            <h3 class="font-semibold text-gray-900">{{ Auth::user()->name }}</h3>
-                            <p class="text-xs text-gray-500 font-mono mt-1">{{ url('/' . Auth::user()->username) }}</p>
-                        </div>
                     </div>
                 </div>
             </div>
