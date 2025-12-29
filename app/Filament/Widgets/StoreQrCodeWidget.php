@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class StoreQrCodeWidget extends Widget
 {
-    protected static string $view = 'filament.widgets.store-qr-code-widget';
+    protected string $view = 'filament.widgets.store-qr-code-widget';
 
     protected static ?int $sort = 1;
 
