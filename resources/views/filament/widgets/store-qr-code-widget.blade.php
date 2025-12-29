@@ -14,7 +14,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap gap-3 justify-center w-full">
+            <div class="flex flex-wrap gap-3 justify-center w-full mt-5">
                 <x-filament::button tag="a" href="{{ route('download-qr') }}" target="_blank"
                     icon="heroicon-o-arrow-down-tray" color="primary" class="w-full sm:w-auto">
                     Download QR Code
