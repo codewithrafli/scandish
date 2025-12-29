@@ -2,14 +2,19 @@
 
 namespace App\Filament\Resources\Users\Tables; // Namespace untuk kelas UsersTable
 
+use App\Models\User;
+use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup; // Import BulkActionGroup untuk mengelompokkan aksi bulk
 use Filament\Actions\DeleteAction; // Import DeleteAction untuk aksi hapus per record
 use Filament\Actions\DeleteBulkAction; // Import DeleteBulkAction untuk aksi hapus bulk
 use Filament\Actions\EditAction; // Import EditAction untuk aksi edit per record
 use Filament\Actions\ViewAction; // Import ViewAction untuk aksi lihat per record
+use Filament\Schemas\Components\Actions;
 use Filament\Tables\Columns\ImageColumn; // Import ImageColumn untuk menampilkan kolom gambar
 use Filament\Tables\Columns\TextColumn; // Import TextColumn untuk menampilkan kolom teks
 use Filament\Tables\Table; // Import Table class dari Filament
+use Illuminate\Support\HtmlString;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class UsersTable // Kelas untuk konfigurasi tabel user
 {
@@ -38,6 +43,18 @@ class UsersTable // Kelas untuk konfigurasi tabel user
                 ViewAction::make(), // Membuat aksi untuk melihat detail record
                 EditAction::make(), // Membuat aksi untuk mengedit record
                 DeleteAction::make(), // Membuat aksi untuk menghapus record
+                Action::make('qr_code')
+                    ->icon('heroicon-o-qr-code')
+                    ->label('QR Code')
+                    ->visible(fn(User $record) => $record->role === 'store')
+                    ->modalHeading('Store QR Code')
+                    ->modalContent(fn(User $record) => new HtmlString(
+                        '<div class="flex justify-center p-4">' .
+                            QrCode::size(200)->generate(url('/' . $record->username)) .
+                            '</div>'
+                    ))
+                    ->modalSubmitAction(false)
+                    ->modalCancelActionLabel('Close'),
             ])
             ->toolbarActions([ // Mendefinisikan aksi-aksi yang tersedia di toolbar
                 BulkActionGroup::make([ // Membuat grup aksi bulk

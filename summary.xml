@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2025-12-21T17:42:48" pdepend="@package_version@" ahh="1.0869565217391" andc="0.063492063492063" calls="699" ccn="177" ccn2="181" cloc="1363" clsa="1" clsc="50" eloc="2281" fanout="256" leafs="38" lloc="902" loc="2795" maxDIT="2" ncloc="1432" noc="51" nof="0" noi="0" nom="118" nop="27" roots="13">
+  <files>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Pages/Auth/Register.php" loc="45" cloc="2" eloc="39" lloc="12" ncloc="43"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Pages/CreateProductCategory.php" loc="17" cloc="8" eloc="12" lloc="6" ncloc="9"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Pages/EditProductCategory.php" loc="29" cloc="16" eloc="23" lloc="11" ncloc="13"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Pages/ListProductCategories.php" loc="20" cloc="10" eloc="15" lloc="7" ncloc="10"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/ProductCategoryResource.php" loc="85" cloc="48" eloc="67" lloc="38" ncloc="37"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Schemas/ProductCategoryForm.php" loc="34" cloc="25" eloc="30" lloc="8" ncloc="9"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Tables/ProductCategoriesTable.php" loc="56" cloc="43" eloc="52" lloc="16" ncloc="13"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Pages/CreateProduct.php" loc="17" cloc="8" eloc="12" lloc="6" ncloc="9"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Pages/EditProduct.php" loc="29" cloc="16" eloc="23" lloc="11" ncloc="13"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Pages/ListProducts.php" loc="20" cloc="10" eloc="15" lloc="7" ncloc="10"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/ProductResource.php" loc="115" cloc="66" eloc="89" lloc="50" ncloc="49"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Schemas/ProductForm.php" loc="87" cloc="73" eloc="81" lloc="19" ncloc="14"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Tables/ProductsTable.php" loc="78" cloc="61" eloc="73" lloc="24" ncloc="17"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Pages/CreateSubscription.php" loc="17" cloc="8" eloc="12" lloc="6" ncloc="9"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Pages/EditSubscription.php" loc="29" cloc="16" eloc="23" lloc="11" ncloc="13"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Pages/ListSubscriptions.php" loc="20" cloc="10" eloc="15" lloc="7" ncloc="10"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Schemas/SubscriptionForm.php" loc="50" cloc="39" eloc="46" lloc="10" ncloc="11"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/SubscriptionResource.php" loc="81" cloc="45" eloc="65" lloc="37" ncloc="36"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Tables/SubscriptionsTable.php" loc="53" cloc="40" eloc="49" lloc="14" ncloc="13"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Pages/CreateTransaction.php" loc="17" cloc="8" eloc="12" lloc="6" ncloc="9"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Pages/EditTransaction.php" loc="29" cloc="16" eloc="23" lloc="11" ncloc="13"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Pages/ListTransactions.php" loc="20" cloc="10" eloc="15" lloc="7" ncloc="10"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Schemas/TransactionForm.php" loc="102" cloc="80" eloc="94" lloc="28" ncloc="22"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Tables/TransactionsTable.php" loc="68" cloc="54" eloc="64" lloc="17" ncloc="14"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/TransactionResource.php" loc="96" cloc="54" eloc="76" lloc="41" ncloc="42"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Pages/CreateUser.php" loc="17" cloc="8" eloc="12" lloc="6" ncloc="9"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Pages/EditUser.php" loc="25" cloc="12" eloc="19" lloc="9" ncloc="13"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Pages/ListUsers.php" loc="20" cloc="10" eloc="15" lloc="7" ncloc="10"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Schemas/UserForm.php" loc="48" cloc="38" eloc="44" lloc="7" ncloc="10"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Tables/UsersTable.php" loc="49" cloc="36" eloc="44" lloc="11" ncloc="13"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/UserResource.php" loc="55" cloc="31" eloc="44" lloc="25" ncloc="24"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/DashboardOverview.php" loc="128" cloc="4" eloc="101" lloc="35" ncloc="124"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/RecentActivities.php" loc="133" cloc="2" eloc="111" lloc="18" ncloc="131"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/RevenueChart.php" loc="85" cloc="4" eloc="69" lloc="26" ncloc="81"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/TopProducts.php" loc="160" cloc="2" eloc="135" lloc="33" ncloc="158"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/TransactionAnalytics.php" loc="104" cloc="8" eloc="87" lloc="25" ncloc="96"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/Api/MidtransController.php" loc="62" cloc="43" eloc="52" lloc="40" ncloc="19"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/Controller.php" loc="9" cloc="4" eloc="5" lloc="1" ncloc="5"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/FrontendController.php" loc="30" cloc="15" eloc="22" lloc="13" ncloc="15"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/ProductController.php" loc="67" cloc="34" eloc="48" lloc="30" ncloc="33"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/TransactionController.php" loc="138" cloc="84" eloc="105" lloc="54" ncloc="54"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/Product.php" loc="65" cloc="34" eloc="52" lloc="25" ncloc="31"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/ProductCategory.php" loc="52" cloc="27" eloc="40" lloc="23" ncloc="25"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/ProductIngredient.php" loc="20" cloc="10" eloc="15" lloc="6" ncloc="10"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/Subscription.php" loc="39" cloc="20" eloc="30" lloc="16" ncloc="19"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/SubscriptionPayment.php" loc="23" cloc="12" eloc="17" lloc="7" ncloc="11"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/Transaction.php" loc="53" cloc="29" eloc="43" lloc="21" ncloc="24"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/TransactionDetail.php" loc="29" cloc="15" eloc="22" lloc="9" ncloc="14"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/User.php" loc="83" cloc="52" eloc="54" lloc="24" ncloc="31"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Providers/AppServiceProvider.php" loc="25" cloc="14" eloc="12" lloc="4" ncloc="11"/>
+    <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Providers/Filament/AdminPanelProvider.php" loc="62" cloc="49" eloc="58" lloc="17" ncloc="13"/>
+  </files>
+  <package name="App\Filament\Pages\Auth" noc="1" noi="0" nom="3" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Register" fqname="App\Filament\Pages\Auth\Register" start="11" end="44" loc="34" cloc="2" eloc="26" lloc="3" ncloc="32" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.2775" ca="1" cbo="4" ce="4" impl="0" cis="1" csz="3" npm="1" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Pages/Auth/Register.php"/>
+      <method name="form" start="13" end="23" ccn="1" ccn2="1" loc="11" cloc="0" eloc="10" lloc="1" ncloc="11" npath="1" hnt="25" hnd="14" hv="95.18387305144" hd="9" hl="0.11111111111111" he="856.65485746296" ht="47.59193652572" hb="0.0300664855348" hi="10.575985894604" mi="64.19760628919"/>
+      <method name="getLogoFormComponent" start="25" end="32" ccn="1" ccn2="1" loc="8" cloc="1" eloc="7" lloc="1" ncloc="7" npath="1" hnt="13" hnd="9" hv="41.20902501875" hd="5.625" hl="0.17777777777778" he="231.80076573047" ht="12.877820318359" hb="0.012578301180681" hi="7.3260488922222" mi="70.122361226293"/>
+      <method name="getUsernameFormComponent" start="34" end="43" ccn="1" ccn2="1" loc="10" cloc="1" eloc="9" lloc="1" ncloc="9" npath="1" hnt="19" hnd="12" hv="68.114287513702" hd="4.2857142857143" hl="0.23333333333333" he="291.91837505872" ht="16.217687503262" hb="0.014668522360294" hi="15.893333753197" mi="66.21332718302"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\ProductCategories\Pages" noc="3" noi="0" nom="4" nof="0" cr="0.15" rcr="0.1755">
+    <class name="CreateProductCategory" fqname="App\Filament\Resources\ProductCategories\Pages\CreateProductCategory" start="8" end="16" loc="9" cloc="3" eloc="3" lloc="1" ncloc="6" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Pages/CreateProductCategory.php"/>
+      <method name="getRedirectUrl" start="12" end="15" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="EditProductCategory" fqname="App\Filament\Resources\ProductCategories\Pages\EditProductCategory" start="11" end="28" loc="18" cloc="8" eloc="10" lloc="2" ncloc="10" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.1755" ca="1" cbo="3" ce="3" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Pages/EditProductCategory.php"/>
+      <method name="getHeaderActions" start="15" end="22" ccn="1" ccn2="1" loc="8" cloc="4" eloc="7" lloc="1" ncloc="4" npath="1" hnt="14" hnd="10" hv="46.506993328423" hd="12.833333333333" hl="0.077922077922078" he="596.83974771476" ht="33.157763761931" hb="0.023629284467182" hi="3.6239215580589" mi="69.754574016954"/>
+      <method name="getRedirectUrl" start="24" end="27" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="ListProductCategories" fqname="App\Filament\Resources\ProductCategories\Pages\ListProductCategories" start="9" end="19" loc="11" cloc="4" eloc="5" lloc="1" ncloc="7" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Pages/ListProductCategories.php"/>
+      <method name="getHeaderActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="2" eloc="5" lloc="1" ncloc="4" npath="1" hnt="8" hnd="8" hv="24" hd="24.5" hl="0.040816326530612" he="588" ht="32.666666666667" hb="0.023395390363168" hi="0.97959183673469" mi="74.953933275297"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\ProductCategories" noc="1" noi="0" nom="7" nof="0" cr="0.15" rcr="0.1755">
+    <class name="ProductCategoryResource" fqname="App\Filament\Resources\ProductCategories\ProductCategoryResource" start="22" end="84" loc="63" cloc="29" eloc="35" lloc="10" ncloc="34" dit="2" noam="7" nocc="0" noom="0" nom="7" cr="0.15" rcr="0.1755" ca="0" cbo="13" ce="13" impl="0" cis="7" csz="11" npm="7" vars="4" varsi="4" varsnp="0" wmc="8" wmci="8" wmcnp="8">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/ProductCategoryResource.php"/>
+      <method name="getEloquentQuery" start="32" end="41" ccn="2" ccn2="2" loc="10" cloc="4" eloc="7" lloc="4" ncloc="6" npath="2" hnt="25" hnd="17" hv="102.18657103126" hd="17.416666666667" hl="0.057416267942584" he="1779.7494454611" ht="98.874969192282" hb="0.048953602393546" hi="5.8671715424646" mi="67.226253906512"/>
+      <method name="form" start="43" end="46" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="table" start="48" end="51" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="getRelations" start="53" end="58" ccn="1" ccn2="1" loc="6" cloc="2" eloc="4" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="60" end="67" ccn="1" ccn2="1" loc="8" cloc="4" eloc="7" lloc="1" ncloc="4" npath="1" hnt="24" hnd="18" hv="100.07820003462" hd="7.5" hl="0.13333333333333" he="750.58650025962" ht="41.699250014423" hb="0.027530403584309" hi="13.343760004615" mi="67.424155441814"/>
+      <method name="getRecordRouteBindingEloquentQuery" start="69" end="75" ccn="1" ccn2="1" loc="7" cloc="3" eloc="6" lloc="1" ncloc="4" npath="1" hnt="12" hnd="11" hv="41.513179423648" hd="22.5" hl="0.044444444444444" he="934.04653703207" ht="51.891474279559" hb="0.031851098981431" hi="1.8450301966066" mi="71.560374059287"/>
+      <method name="getGlobalSearchResultDetails" start="77" end="83" ccn="1" ccn2="1" loc="7" cloc="3" eloc="5" lloc="1" ncloc="4" npath="1" hnt="12" hnd="12" hv="43.019550008654" hd="13.5" hl="0.074074074074074" he="580.76392511683" ht="32.26466250649" hb="0.023203054839448" hi="3.1866333339744" mi="73.179240682541"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\ProductCategories\Schemas" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="ProductCategoryForm" fqname="App\Filament\Resources\ProductCategories\Schemas\ProductCategoryForm" start="11" end="33" loc="23" cloc="17" eloc="19" lloc="1" ncloc="6" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="1" cbo="5" ce="5" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Schemas/ProductCategoryForm.php"/>
+      <method name="configure" start="13" end="32" ccn="1" ccn2="1" loc="20" cloc="16" eloc="19" lloc="1" ncloc="4" npath="1" hnt="46" hnd="27" hv="218.72482509952" hd="10.3125" hl="0.096969696969697" he="2255.5997588388" ht="125.31109771327" hb="0.057330637575588" hi="21.20968000965" mi="55.586814902956"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\ProductCategories\Tables" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="ProductCategoriesTable" fqname="App\Filament\Resources\ProductCategories\Tables\ProductCategoriesTable" start="19" end="55" loc="37" cloc="27" eloc="33" lloc="1" ncloc="10" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="1" cbo="13" ce="13" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/ProductCategories/Tables/ProductCategoriesTable.php"/>
+      <method name="configure" start="21" end="54" ccn="2" ccn2="2" loc="34" cloc="26" eloc="33" lloc="1" ncloc="8" npath="2" hnt="97" hnd="43" hv="526.3476812061" hd="13.65" hl="0.073260073260073" he="7184.6458484633" ht="399.1469915813" hb="0.12411253767682" hi="38.560269685429" mi="47.551798351381"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Products\Pages" noc="3" noi="0" nom="4" nof="0" cr="0.15" rcr="0.1755">
+    <class name="CreateProduct" fqname="App\Filament\Resources\Products\Pages\CreateProduct" start="8" end="16" loc="9" cloc="3" eloc="3" lloc="1" ncloc="6" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Pages/CreateProduct.php"/>
+      <method name="getRedirectUrl" start="12" end="15" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="EditProduct" fqname="App\Filament\Resources\Products\Pages\EditProduct" start="11" end="28" loc="18" cloc="8" eloc="10" lloc="2" ncloc="10" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.1755" ca="1" cbo="3" ce="3" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Pages/EditProduct.php"/>
+      <method name="getHeaderActions" start="15" end="22" ccn="1" ccn2="1" loc="8" cloc="4" eloc="7" lloc="1" ncloc="4" npath="1" hnt="14" hnd="10" hv="46.506993328423" hd="12.833333333333" hl="0.077922077922078" he="596.83974771476" ht="33.157763761931" hb="0.023629284467182" hi="3.6239215580589" mi="69.754574016954"/>
+      <method name="getRedirectUrl" start="24" end="27" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="ListProducts" fqname="App\Filament\Resources\Products\Pages\ListProducts" start="9" end="19" loc="11" cloc="4" eloc="5" lloc="1" ncloc="7" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Pages/ListProducts.php"/>
+      <method name="getHeaderActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="2" eloc="5" lloc="1" ncloc="4" npath="1" hnt="8" hnd="8" hv="24" hd="24.5" hl="0.040816326530612" he="588" ht="32.666666666667" hb="0.023395390363168" hi="0.97959183673469" mi="74.953933275297"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Products" noc="1" noi="0" nom="8" nof="0" cr="0.15" rcr="0.1755">
+    <class name="ProductResource" fqname="App\Filament\Resources\Products\ProductResource" start="23" end="114" loc="92" cloc="46" eloc="55" lloc="20" ncloc="46" dit="2" noam="8" nocc="0" noom="0" nom="8" cr="0.15" rcr="0.1755" ca="0" cbo="15" ce="15" impl="0" cis="8" csz="12" npm="8" vars="4" varsi="4" varsnp="0" wmc="13" wmci="13" wmcnp="13">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/ProductResource.php"/>
+      <method name="getEloquentQuery" start="33" end="46" ccn="3" ccn2="3" loc="14" cloc="6" eloc="10" lloc="6" ncloc="8" npath="4" hnt="35" hnd="20" hv="151.26748332106" hd="20.25" hl="0.049382716049383" he="3063.1665372514" ht="170.17591873619" hb="0.070306015348497" hi="7.4699991763485" mi="62.519919967736"/>
+      <method name="canCreate" start="48" end="70" ccn="3" ccn2="4" loc="23" cloc="13" eloc="16" lloc="8" ncloc="10" npath="4" hnt="63" hnd="32" hv="315" hd="13.684210526316" hl="0.073076923076923" he="4310.5263157895" ht="239.47368421053" hb="0.088287444412441" hi="23.019230769231" mi="55.702154957791"/>
+      <method name="form" start="72" end="75" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="table" start="77" end="80" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="getRelations" start="82" end="87" ccn="1" ccn2="1" loc="6" cloc="2" eloc="4" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="89" end="96" ccn="1" ccn2="1" loc="8" cloc="4" eloc="7" lloc="1" ncloc="4" npath="1" hnt="24" hnd="18" hv="100.07820003462" hd="7.5" hl="0.13333333333333" he="750.58650025962" ht="41.699250014423" hb="0.027530403584309" hi="13.343760004615" mi="67.424155441814"/>
+      <method name="getRecordRouteBindingEloquentQuery" start="98" end="104" ccn="1" ccn2="1" loc="7" cloc="3" eloc="6" lloc="1" ncloc="4" npath="1" hnt="12" hnd="11" hv="41.513179423648" hd="22.5" hl="0.044444444444444" he="934.04653703207" ht="51.891474279559" hb="0.031851098981431" hi="1.8450301966066" mi="71.560374059287"/>
+      <method name="getGlobalSearchResultDetails" start="106" end="113" ccn="1" ccn2="1" loc="8" cloc="4" eloc="6" lloc="1" ncloc="4" npath="1" hnt="20" hnd="18" hv="83.398500028846" hd="10.214285714286" hl="0.097902097902098" he="851.8561074375" ht="47.325339302083" hb="0.029954097534866" hi="8.1648881147122" mi="69.438958429258"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Products\Schemas" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="ProductForm" fqname="App\Filament\Resources\Products\Schemas\ProductForm" start="15" end="86" loc="72" cloc="61" eloc="66" lloc="8" ncloc="11" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="1" cbo="9" ce="9" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Schemas/ProductForm.php"/>
+      <method name="configure" start="17" end="85" ccn="2" ccn2="2" loc="69" cloc="60" eloc="66" lloc="8" ncloc="9" npath="1" hnt="185" hnd="63" hv="1105.7967858475" hd="19.914893617021" hl="0.050213675213675" he="22021.825352197" ht="1223.4347417887" hb="0.26188720942425" hi="55.526120656872" mi="38.727673542325"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Products\Tables" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="ProductsTable" fqname="App\Filament\Resources\Products\Tables\ProductsTable" start="21" end="77" loc="57" cloc="43" eloc="52" lloc="7" ncloc="14" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="1" cbo="14" ce="14" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Products/Tables/ProductsTable.php"/>
+      <method name="configure" start="23" end="76" ccn="3" ccn2="3" loc="54" cloc="42" eloc="52" lloc="7" ncloc="12" npath="2" hnt="161" hnd="64" hv="966" hd="14" hl="0.071428571428571" he="13524" ht="751.33333333333" hb="0.18921207713483" hi="69" mi="41.26280691291"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Subscriptions\Pages" noc="3" noi="0" nom="4" nof="0" cr="0.15" rcr="0.1755">
+    <class name="CreateSubscription" fqname="App\Filament\Resources\Subscriptions\Pages\CreateSubscription" start="8" end="16" loc="9" cloc="3" eloc="3" lloc="1" ncloc="6" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Pages/CreateSubscription.php"/>
+      <method name="getRedirectUrl" start="12" end="15" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="EditSubscription" fqname="App\Filament\Resources\Subscriptions\Pages\EditSubscription" start="11" end="28" loc="18" cloc="8" eloc="10" lloc="2" ncloc="10" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.1755" ca="1" cbo="3" ce="3" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Pages/EditSubscription.php"/>
+      <method name="getHeaderActions" start="15" end="22" ccn="1" ccn2="1" loc="8" cloc="4" eloc="7" lloc="1" ncloc="4" npath="1" hnt="14" hnd="10" hv="46.506993328423" hd="12.833333333333" hl="0.077922077922078" he="596.83974771476" ht="33.157763761931" hb="0.023629284467182" hi="3.6239215580589" mi="69.754574016954"/>
+      <method name="getRedirectUrl" start="24" end="27" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="ListSubscriptions" fqname="App\Filament\Resources\Subscriptions\Pages\ListSubscriptions" start="9" end="19" loc="11" cloc="4" eloc="5" lloc="1" ncloc="7" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Pages/ListSubscriptions.php"/>
+      <method name="getHeaderActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="2" eloc="5" lloc="1" ncloc="4" npath="1" hnt="8" hnd="8" hv="24" hd="24.5" hl="0.040816326530612" he="588" ht="32.666666666667" hb="0.023395390363168" hi="0.97959183673469" mi="74.953933275297"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Subscriptions\Schemas" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="SubscriptionForm" fqname="App\Filament\Resources\Subscriptions\Schemas\SubscriptionForm" start="13" end="49" loc="37" cloc="29" eloc="33" lloc="1" ncloc="8" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="1" cbo="7" ce="7" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Schemas/SubscriptionForm.php"/>
+      <method name="configure" start="15" end="48" ccn="1" ccn2="1" loc="34" cloc="28" eloc="33" lloc="1" ncloc="6" npath="1" hnt="91" hnd="37" hv="474.06025627223" hd="12.903846153846" hl="0.077496274217586" he="6117.2006145898" ht="339.84447858832" hb="0.11149290403805" hi="36.737903615732" mi="48.004466920566"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Subscriptions" noc="1" noi="0" nom="7" nof="0" cr="0.15" rcr="0.1755">
+    <class name="SubscriptionResource" fqname="App\Filament\Resources\Subscriptions\SubscriptionResource" start="21" end="80" loc="60" cloc="27" eloc="36" lloc="12" ncloc="33" dit="2" noam="7" nocc="0" noom="0" nom="7" cr="0.15" rcr="0.1755" ca="0" cbo="12" ce="12" impl="0" cis="7" csz="9" npm="7" vars="2" varsi="2" varsnp="0" wmc="9" wmci="9" wmcnp="9">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/SubscriptionResource.php"/>
+      <method name="getEloquentQuery" start="27" end="36" ccn="2" ccn2="2" loc="10" cloc="4" eloc="7" lloc="4" ncloc="6" npath="2" hnt="25" hnd="17" hv="102.18657103126" hd="17.416666666667" hl="0.057416267942584" he="1779.7494454611" ht="98.874969192282" hb="0.048953602393546" hi="5.8671715424646" mi="67.226253906512"/>
+      <method name="canEdit" start="38" end="45" ccn="2" ccn2="2" loc="8" cloc="3" eloc="6" lloc="3" ncloc="5" npath="2" hnt="18" hnd="13" hv="66.60791492654" hd="10.4" hl="0.096153846153846" he="692.72231523601" ht="38.484573068667" hb="0.026096656193094" hi="6.404607204475" mi="69.988078859492"/>
+      <method name="form" start="47" end="50" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="table" start="52" end="55" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="getRelations" start="57" end="62" ccn="1" ccn2="1" loc="6" cloc="2" eloc="4" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="64" end="71" ccn="1" ccn2="1" loc="8" cloc="4" eloc="7" lloc="1" ncloc="4" npath="1" hnt="24" hnd="18" hv="100.07820003462" hd="7.5" hl="0.13333333333333" he="750.58650025962" ht="41.699250014423" hb="0.027530403584309" hi="13.343760004615" mi="67.424155441814"/>
+      <method name="getRecordRouteBindingEloquentQuery" start="73" end="79" ccn="1" ccn2="1" loc="7" cloc="3" eloc="6" lloc="1" ncloc="4" npath="1" hnt="12" hnd="11" hv="41.513179423648" hd="22.5" hl="0.044444444444444" he="934.04653703207" ht="51.891474279559" hb="0.031851098981431" hi="1.8450301966066" mi="71.560374059287"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Subscriptions\Tables" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="SubscriptionsTable" fqname="App\Filament\Resources\Subscriptions\Tables\SubscriptionsTable" start="17" end="52" loc="36" cloc="26" eloc="32" lloc="1" ncloc="10" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="1" cbo="11" ce="11" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Subscriptions/Tables/SubscriptionsTable.php"/>
+      <method name="configure" start="19" end="51" ccn="1" ccn2="1" loc="33" cloc="25" eloc="32" lloc="1" ncloc="8" npath="1" hnt="76" hnd="33" hv="383.37395307124" hd="12.75" hl="0.07843137254902" he="4888.0179016583" ht="271.55655009213" hb="0.09600649257215" hi="30.068545338921" mi="48.941650139344"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Transactions\Pages" noc="3" noi="0" nom="4" nof="0" cr="0.15" rcr="0.1755">
+    <class name="CreateTransaction" fqname="App\Filament\Resources\Transactions\Pages\CreateTransaction" start="8" end="16" loc="9" cloc="3" eloc="3" lloc="1" ncloc="6" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Pages/CreateTransaction.php"/>
+      <method name="getRedirectUrl" start="12" end="15" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="EditTransaction" fqname="App\Filament\Resources\Transactions\Pages\EditTransaction" start="11" end="28" loc="18" cloc="8" eloc="10" lloc="2" ncloc="10" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.1755" ca="1" cbo="3" ce="3" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Pages/EditTransaction.php"/>
+      <method name="getHeaderActions" start="15" end="22" ccn="1" ccn2="1" loc="8" cloc="4" eloc="7" lloc="1" ncloc="4" npath="1" hnt="14" hnd="10" hv="46.506993328423" hd="12.833333333333" hl="0.077922077922078" he="596.83974771476" ht="33.157763761931" hb="0.023629284467182" hi="3.6239215580589" mi="69.754574016954"/>
+      <method name="getRedirectUrl" start="24" end="27" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="ListTransactions" fqname="App\Filament\Resources\Transactions\Pages\ListTransactions" start="9" end="19" loc="11" cloc="4" eloc="5" lloc="1" ncloc="7" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Pages/ListTransactions.php"/>
+      <method name="getHeaderActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="2" eloc="5" lloc="1" ncloc="4" npath="1" hnt="8" hnd="8" hv="24" hd="24.5" hl="0.040816326530612" he="588" ht="32.666666666667" hb="0.023395390363168" hi="0.97959183673469" mi="74.953933275297"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Transactions\Schemas" noc="1" noi="0" nom="2" nof="0" cr="0.15" rcr="0.15">
+    <class name="TransactionForm" fqname="App\Filament\Resources\Transactions\Schemas\TransactionForm" start="14" end="101" loc="88" cloc="69" eloc="79" lloc="17" ncloc="19" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.15" ca="1" cbo="8" ce="8" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Schemas/TransactionForm.php"/>
+      <method name="configure" start="16" end="87" ccn="2" ccn2="2" loc="72" cloc="61" eloc="71" lloc="11" ncloc="11" npath="1" hnt="208" hnd="76" hv="1299.5689227963" hd="16.229508196721" hl="0.061616161616162" he="21091.364484726" ht="1171.7424713737" hb="0.25445746516543" hi="80.074448778356" mi="37.544847345473"/>
+      <method name="updateTotals" start="89" end="100" ccn="1" ccn2="2" loc="12" cloc="6" eloc="8" lloc="6" ncloc="6" npath="1" hnt="70" hnd="36" hv="361.89475010096" hd="19.236842105263" hl="0.051983584131327" he="6961.7121664159" ht="386.7617870231" hb="0.12153166676871" hi="18.812586188559" mi="62.115794865569"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Transactions\Tables" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="TransactionsTable" fqname="App\Filament\Resources\Transactions\Tables\TransactionsTable" start="18" end="67" loc="50" cloc="39" eloc="46" lloc="3" ncloc="11" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="1" cbo="11" ce="11" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/Tables/TransactionsTable.php"/>
+      <method name="configure" start="20" end="66" ccn="1" ccn2="1" loc="47" cloc="38" eloc="46" lloc="3" ncloc="9" npath="1" hnt="126" hnd="49" hv="707.45344035852" hd="12.810810810811" hl="0.078059071729958" he="9063.0521818902" ht="503.5028989939" hb="0.14489778021953" hi="55.223158846551" mi="43.640535625606"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Transactions" noc="1" noi="0" nom="9" nof="0" cr="0.15" rcr="0.1755">
+    <class name="TransactionResource" fqname="App\Filament\Resources\Transactions\TransactionResource" start="22" end="95" loc="74" cloc="35" eloc="43" lloc="12" ncloc="39" dit="2" noam="9" nocc="0" noom="0" nom="9" cr="0.15" rcr="0.1755" ca="0" cbo="12" ce="12" impl="0" cis="9" csz="12" npm="9" vars="3" varsi="3" varsnp="0" wmc="10" wmci="10" wmcnp="10">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Transactions/TransactionResource.php"/>
+      <method name="getEloquentQuery" start="30" end="39" ccn="2" ccn2="2" loc="10" cloc="4" eloc="7" lloc="4" ncloc="6" npath="2" hnt="25" hnd="17" hv="102.18657103126" hd="17.416666666667" hl="0.057416267942584" he="1779.7494454611" ht="98.874969192282" hb="0.048953602393546" hi="5.8671715424646" mi="67.226253906512"/>
+      <method name="form" start="41" end="44" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="table" start="46" end="49" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="getRelations" start="51" end="56" ccn="1" ccn2="1" loc="6" cloc="2" eloc="4" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="58" end="65" ccn="1" ccn2="1" loc="8" cloc="4" eloc="7" lloc="1" ncloc="4" npath="1" hnt="24" hnd="18" hv="100.07820003462" hd="7.5" hl="0.13333333333333" he="750.58650025962" ht="41.699250014423" hb="0.027530403584309" hi="13.343760004615" mi="67.424155441814"/>
+      <method name="getRecordRouteBindingEloquentQuery" start="67" end="73" ccn="1" ccn2="1" loc="7" cloc="3" eloc="6" lloc="1" ncloc="4" npath="1" hnt="12" hnd="11" hv="41.513179423648" hd="22.5" hl="0.044444444444444" he="934.04653703207" ht="51.891474279559" hb="0.031851098981431" hi="1.8450301966066" mi="71.560374059287"/>
+      <method name="getGloballySearchableAttributes" start="75" end="78" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="11" hnd="10" hv="36.541209043761" hd="9.3333333333333" hl="0.10714285714286" he="341.05128440844" ht="18.947293578246" hb="0.016271410619021" hi="3.915129540403" mi="78.514964679948"/>
+      <method name="getGlobalSearchResultTitle" start="80" end="84" ccn="1" ccn2="1" loc="5" cloc="2" eloc="3" lloc="1" ncloc="3" npath="1" hnt="10" hnd="9" hv="31.699250014423" hd="7" hl="0.14285714285714" he="221.89475010096" ht="12.32748611672" hb="0.012217342904829" hi="4.5284642877747" mi="78.947226438868"/>
+      <method name="getGlobalSearchResultDetails" start="86" end="94" ccn="1" ccn2="1" loc="9" cloc="5" eloc="7" lloc="1" ncloc="4" npath="1" hnt="26" hnd="20" hv="112.37013046707" hd="8" hl="0.125" he="898.96104373657" ht="49.942280207587" hb="0.031048407280935" hi="14.046266308384" mi="67.071874361795"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Users\Pages" noc="3" noi="0" nom="4" nof="0" cr="0.15" rcr="0.1755">
+    <class name="CreateUser" fqname="App\Filament\Resources\Users\Pages\CreateUser" start="8" end="16" loc="9" cloc="3" eloc="3" lloc="1" ncloc="6" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Pages/CreateUser.php"/>
+      <method name="getRedirectUrl" start="12" end="15" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="EditUser" fqname="App\Filament\Resources\Users\Pages\EditUser" start="9" end="24" loc="16" cloc="6" eloc="8" lloc="2" ncloc="10" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.1755" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Pages/EditUser.php"/>
+      <method name="getHeaderActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="2" eloc="5" lloc="1" ncloc="4" npath="1" hnt="8" hnd="8" hv="24" hd="24.5" hl="0.040816326530612" he="588" ht="32.666666666667" hb="0.023395390363168" hi="0.97959183673469" mi="74.953933275297"/>
+      <method name="getRedirectUrl" start="20" end="23" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="ListUsers" fqname="App\Filament\Resources\Users\Pages\ListUsers" start="9" end="19" loc="11" cloc="4" eloc="5" lloc="1" ncloc="7" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Pages/ListUsers.php"/>
+      <method name="getHeaderActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="2" eloc="5" lloc="1" ncloc="4" npath="1" hnt="8" hnd="8" hv="24" hd="24.5" hl="0.040816326530612" he="588" ht="32.666666666667" hb="0.023395390363168" hi="0.97959183673469" mi="74.953933275297"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Users\Schemas" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="UserForm" fqname="App\Filament\Resources\Users\Schemas\UserForm" start="10" end="47" loc="38" cloc="31" eloc="34" lloc="1" ncloc="7" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="1" cbo="4" ce="4" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Schemas/UserForm.php"/>
+      <method name="configure" start="12" end="46" ccn="1" ccn2="1" loc="35" cloc="30" eloc="34" lloc="1" ncloc="5" npath="1" hnt="72" hnd="33" hv="363.19637659381" hd="8.0625" hl="0.12403100775194" he="2928.2707862876" ht="162.68171034931" hb="0.06822647001747" hi="45.047612600782" mi="48.531726558747"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Users\Tables" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="UsersTable" fqname="App\Filament\Resources\Users\Tables\UsersTable" start="14" end="48" loc="35" cloc="25" eloc="30" lloc="1" ncloc="10" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="1" cbo="8" ce="8" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/Tables/UsersTable.php"/>
+      <method name="configure" start="16" end="47" ccn="1" ccn2="1" loc="32" cloc="24" eloc="30" lloc="1" ncloc="8" npath="1" hnt="67" hnd="28" hv="322.09277977786" hd="8.6" hl="0.11627906976744" he="2769.9979060896" ht="153.88877256053" hb="0.06574534960857" hi="37.452648811379" mi="50.082711280168"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\Users" noc="1" noi="0" nom="5" nof="0" cr="0.15" rcr="0.1755">
+    <class name="UserResource" fqname="App\Filament\Resources\Users\UserResource" start="18" end="54" loc="37" cloc="16" eloc="20" lloc="5" ncloc="21" dit="2" noam="5" nocc="0" noom="0" nom="5" cr="0.15" rcr="0.1755" ca="0" cbo="9" ce="9" impl="0" cis="5" csz="7" npm="5" vars="2" varsi="2" varsnp="0" wmc="5" wmci="5" wmcnp="5">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Resources/Users/UserResource.php"/>
+      <method name="canViewAny" start="24" end="27" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="12.25" hl="0.081632653061224" he="349.48423140901" ht="19.415790633834" hb="0.016538538763157" hi="2.3289244908556" mi="79.267620989406"/>
+      <method name="form" start="29" end="32" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="table" start="34" end="37" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="getRelations" start="39" end="44" ccn="1" ccn2="1" loc="6" cloc="2" eloc="4" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="46" end="53" ccn="1" ccn2="1" loc="8" cloc="4" eloc="7" lloc="1" ncloc="4" npath="1" hnt="24" hnd="18" hv="100.07820003462" hd="7.5" hl="0.13333333333333" he="750.58650025962" ht="41.699250014423" hb="0.027530403584309" hi="13.343760004615" mi="67.424155441814"/>
+    </class>
+  </package>
+  <package name="App\Filament\Widgets" noc="5" noi="0" nom="11" nof="0" cr="0.15" rcr="0.2775">
+    <class name="DashboardOverview" fqname="App\Filament\Widgets\DashboardOverview" start="15" end="127" loc="113" cloc="4" eloc="84" lloc="22" ncloc="109" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.2775" ca="0" cbo="7" ce="7" impl="0" cis="0" csz="3" npm="0" vars="0" varsi="0" varsnp="0" wmc="5" wmci="5" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/DashboardOverview.php"/>
+      <method name="getStats" start="17" end="24" ccn="2" ccn2="2" loc="8" cloc="0" eloc="7" lloc="3" ncloc="8" npath="2" hnt="18" hnd="12" hv="64.529325012981" hd="14" hl="0.071428571428571" he="903.41055018173" ht="50.189475010096" hb="0.031150774618884" hi="4.6092375009272" mi="68.624112732"/>
+      <method name="getAdminStats" start="26" end="65" ccn="1" ccn2="1" loc="40" cloc="1" eloc="33" lloc="9" ncloc="39" npath="1" hnt="145" hnd="56" hv="842.06646369835" hd="8.695652173913" hl="0.115" he="7322.3170756378" ht="406.79539309099" hb="0.12569300212872" hi="96.837643325311" mi="46.257374843121"/>
+      <method name="getStoreStats" start="67" end="126" ccn="2" ccn2="2" loc="60" cloc="3" eloc="44" lloc="10" ncloc="57" npath="2" hnt="201" hnd="65" hv="1210.4959304187" hd="10.898148148148" hl="0.091758708581138" he="13192.163982434" ht="732.89799902409" hb="0.18610417068829" hi="111.07354331795" mi="42.293826769166"/>
+    </class>
+    <class name="RecentActivities" fqname="App\Filament\Widgets\RecentActivities" start="12" end="132" loc="121" cloc="2" eloc="96" lloc="7" ncloc="119" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.21375" ca="0" cbo="6" ce="6" impl="0" cis="1" csz="4" npm="1" vars="3" varsi="3" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/RecentActivities.php"/>
+      <method name="table" start="20" end="131" ccn="2" ccn2="2" loc="112" cloc="2" eloc="96" lloc="7" ncloc="110" npath="2" hnt="284" hnd="74" hv="1763.4847558386" hd="17.368852459016" hl="0.057574327512978" he="30629.706537886" ht="1701.6503632159" hb="0.32631770345334" hi="101.5314488968" mi="33.758663362736"/>
+    </class>
+    <class name="RevenueChart" fqname="App\Filament\Widgets\RevenueChart" start="10" end="84" loc="75" cloc="4" eloc="55" lloc="16" ncloc="71" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.21375" ca="0" cbo="3" ce="3" impl="0" cis="0" csz="5" npm="0" vars="2" varsi="2" varsnp="0" wmc="6" wmci="6" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/RevenueChart.php"/>
+      <method name="getData" start="16" end="59" ccn="4" ccn2="4" loc="44" cloc="4" eloc="35" lloc="14" ncloc="40" npath="6" hnt="146" hnd="64" hv="876" hd="16.826086956522" hl="0.059431524547804" he="14739.652173913" ht="818.86956521739" hb="0.20038731925205" hi="52.062015503876" mi="45.176291070762"/>
+      <method name="getType" start="61" end="64" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getOptions" start="66" end="83" ccn="1" ccn2="1" loc="18" cloc="0" eloc="17" lloc="1" ncloc="18" npath="1" hnt="37" hnd="18" hv="154.28722505337" hd="8.2727272727273" hl="0.12087912087912" he="1276.3761345324" ht="70.909785251799" hb="0.039222131863433" hi="18.65010412733" mi="57.701813344179"/>
+    </class>
+    <class name="TopProducts" fqname="App\Filament\Widgets\TopProducts" start="13" end="159" loc="147" cloc="2" eloc="119" lloc="21" ncloc="145" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.21375" ca="0" cbo="8" ce="8" impl="0" cis="1" csz="4" npm="1" vars="3" varsi="3" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/TopProducts.php"/>
+      <method name="table" start="21" end="158" ccn="4" ccn2="4" loc="138" cloc="2" eloc="119" lloc="21" ncloc="136" npath="4" hnt="439" hnd="121" hv="3037.3809611635" hd="20.350961538462" hl="0.049137727380109" he="61813.623118295" ht="3434.0901732386" hb="0.52111656501967" hi="149.24999761919" mi="29.801575875124"/>
+    </class>
+    <class name="TransactionAnalytics" fqname="App\Filament\Widgets\TransactionAnalytics" start="10" end="103" loc="94" cloc="8" eloc="73" lloc="15" ncloc="86" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.21375" ca="0" cbo="4" ce="4" impl="0" cis="0" csz="5" npm="0" vars="2" varsi="2" varsnp="0" wmc="4" wmci="4" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Filament/Widgets/TransactionAnalytics.php"/>
+      <method name="getData" start="16" end="84" ccn="2" ccn2="2" loc="69" cloc="8" eloc="59" lloc="13" ncloc="61" npath="2" hnt="204" hnd="53" hv="1168.4957727309" hd="21.538461538462" hl="0.046428571428571" he="25167.601258819" ht="1398.2000699344" hb="0.28626832377083" hi="54.25158944822" mi="39.622126444475"/>
+      <method name="getType" start="86" end="89" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getOptions" start="91" end="102" ccn="1" ccn2="1" loc="12" cloc="0" eloc="11" lloc="1" ncloc="12" npath="1" hnt="25" hnd="15" hv="97.672264890213" hd="7.4375" hl="0.13445378151261" he="726.43747012096" ht="40.357637228942" hb="0.026936690530857" hi="13.13240536339" mi="63.216189977181"/>
+    </class>
+  </package>
+  <package name="App\Http\Controllers\Api" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.2775">
+    <class name="MidtransController" fqname="App\Http\Controllers\Api\MidtransController" start="9" end="61" loc="53" cloc="37" eloc="43" lloc="35" ncloc="16" dit="1" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.181875" ca="0" cbo="2" ce="2" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="11" wmci="11" wmcnp="11">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/Api/MidtransController.php"/>
+      <method name="callback" start="11" end="60" ccn="11" ccn2="11" loc="50" cloc="36" eloc="43" lloc="35" ncloc="14" npath="36" hnt="178" hnd="57" hv="1038.2544225213" hd="27.75" hl="0.036036036036036" he="28811.560224967" ht="1600.6422347204" hb="0.31327321448524" hi="37.414573784552" mi="41.76784689291"/>
+    </class>
+  </package>
+  <package name="App\Http\Controllers" noc="4" noi="0" nom="9" nof="0" cr="0.2775" rcr="0.15">
+    <class name="Controller" fqname="App\Http\Controllers\Controller" start="5" end="8" loc="4" cloc="1" eloc="0" lloc="0" ncloc="3" dit="0" noam="0" nocc="4" noom="0" nom="0" cr="0.66" rcr="0.15" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/Controller.php"/>
+    </class>
+    <class name="FrontendController" fqname="App\Http\Controllers\FrontendController" start="9" end="29" loc="21" cloc="9" eloc="12" lloc="7" ncloc="12" dit="1" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.181875" ca="0" cbo="3" ce="3" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/FrontendController.php"/>
+      <method name="scanQR" start="11" end="14" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="index" start="16" end="28" ccn="2" ccn2="2" loc="13" cloc="6" eloc="9" lloc="6" ncloc="7" npath="2" hnt="58" hnd="29" hv="281.7628977174" hd="7.425" hl="0.13468013468013" he="2092.0895155517" ht="116.22719530843" hb="0.0545254075794" hi="37.947865012444" mi="61.761063752128"/>
+    </class>
+    <class name="ProductController" fqname="App\Http\Controllers\ProductController" start="10" end="66" loc="57" cloc="27" eloc="36" lloc="22" ncloc="30" dit="1" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.181875" ca="0" cbo="4" ce="4" impl="0" cis="3" csz="3" npm="3" vars="0" varsi="0" varsnp="0" wmc="9" wmci="9" wmcnp="9">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/ProductController.php"/>
+      <method name="find" start="12" end="21" ccn="2" ccn2="2" loc="10" cloc="4" eloc="7" lloc="4" ncloc="6" npath="2" hnt="28" hnd="19" hv="118.94197037642" hd="7.65" hl="0.13071895424837" he="909.90607337962" ht="50.550337409979" hb="0.031299912335001" hi="15.547969983846" mi="66.76453203968"/>
+      <method name="findResults" start="23" end="48" ccn="4" ccn2="4" loc="26" cloc="13" eloc="18" lloc="11" ncloc="13" npath="8" hnt="88" hnd="40" hv="468.32967235009" hd="9.6724137931034" hl="0.10338680926916" he="4529.8783825586" ht="251.65991014214" hb="0.09125775349534" hi="48.419110510348" mi="53.380281079978"/>
+      <method name="show" start="50" end="65" ccn="3" ccn2="3" loc="16" cloc="7" eloc="11" lloc="7" ncloc="9" npath="4" hnt="47" hnd="24" hv="215.49323753389" hd="8.4" hl="0.11904761904762" he="1810.1431952847" ht="100.56351084915" hb="0.049509366193058" hi="25.653956849273" mi="60.540855573939"/>
+    </class>
+    <class name="TransactionController" fqname="App\Http\Controllers\TransactionController" start="10" end="137" loc="128" cloc="77" eloc="92" lloc="45" ncloc="51" dit="1" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.181875" ca="0" cbo="6" ce="6" impl="0" cis="4" csz="4" npm="4" vars="0" varsi="0" varsnp="0" wmc="17" wmci="17" wmcnp="17">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Http/Controllers/TransactionController.php"/>
+      <method name="cart" start="12" end="21" ccn="2" ccn2="2" loc="10" cloc="4" eloc="7" lloc="4" ncloc="6" npath="2" hnt="28" hnd="19" hv="118.94197037642" hd="7.65" hl="0.13071895424837" he="909.90607337962" ht="50.550337409979" hb="0.031299912335001" hi="15.547969983846" mi="66.76453203968"/>
+      <method name="customerInformation" start="23" end="32" ccn="2" ccn2="2" loc="10" cloc="4" eloc="7" lloc="4" ncloc="6" npath="2" hnt="28" hnd="19" hv="118.94197037642" hd="7.65" hl="0.13071895424837" he="909.90607337962" ht="50.550337409979" hb="0.031299912335001" hi="15.547969983846" mi="66.76453203968"/>
+      <method name="checkout" start="34" end="124" ccn="9" ccn2="11" loc="91" cloc="60" eloc="70" lloc="32" ncloc="31" npath="384" hnt="341" hnd="109" hv="2307.9508547489" hd="27.145348837209" hl="0.036838723495395" he="62650.131051295" ht="3480.5628361831" hb="0.52580744912327" hi="85.021963379057" mi="34.722208972037"/>
+      <method name="success" start="126" end="136" ccn="2" ccn2="2" loc="11" cloc="5" eloc="8" lloc="5" ncloc="6" npath="2" hnt="39" hnd="24" hv="178.81353752813" hd="6.9" hl="0.14492753623188" he="1233.8134089441" ht="68.545189385781" hb="0.03834526432306" hi="25.915005438859" mi="64.259684470511"/>
+    </class>
+  </package>
+  <package name="App\Models" noc="8" noi="0" nom="24" nof="0" cr="0.15" rcr="0.405">
+    <class name="Product" fqname="App\Models\Product" start="9" end="64" loc="56" cloc="28" eloc="25" lloc="13" ncloc="28" dit="2" noam="5" nocc="0" noom="0" nom="5" cr="0.15" rcr="0.16821428571429" ca="11" cbo="5" ce="5" impl="0" cis="5" csz="7" npm="5" vars="2" varsi="2" varsnp="0" wmc="7" wmci="7" wmcnp="7">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/Product.php"/>
+      <method name="boot" start="28" end="43" ccn="3" ccn2="3" loc="16" cloc="7" eloc="13" lloc="9" ncloc="9" npath="4" hnt="37" hnd="15" hv="144.55495203752" hd="21" hl="0.047619047619048" he="3035.6539927878" ht="168.64744404377" hb="0.069884402718437" hi="6.8835691446436" mi="60.172391715205"/>
+      <method name="user" start="45" end="48" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="productCategory" start="50" end="53" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="productIngredients" start="55" end="58" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="transactionDetails" start="60" end="63" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="ProductCategory" fqname="App\Models\ProductCategory" start="10" end="51" loc="42" cloc="20" eloc="21" lloc="13" ncloc="22" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.16821428571429" ca="6" cbo="4" ce="4" impl="0" cis="3" csz="4" npm="3" vars="1" varsi="1" varsnp="0" wmc="5" wmci="5" wmcnp="5">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/ProductCategory.php"/>
+      <method name="boot" start="21" end="40" ccn="3" ccn2="3" loc="20" cloc="9" eloc="15" lloc="11" ncloc="11" npath="4" hnt="49" hnd="18" hv="204.32632507067" hd="17" hl="0.058823529411765" he="3473.5475262014" ht="192.97486256675" hb="0.076452949038434" hi="12.019195592393" mi="57.76435750291"/>
+      <method name="user" start="42" end="45" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="products" start="47" end="50" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="ProductIngredient" fqname="App\Models\ProductIngredient" start="8" end="19" loc="12" cloc="5" eloc="3" lloc="1" ncloc="7" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.16821428571429" ca="1" cbo="1" ce="1" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/ProductIngredient.php"/>
+      <method name="product" start="15" end="18" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="Subscription" fqname="App\Models\Subscription" start="9" end="38" loc="30" cloc="14" eloc="13" lloc="7" ncloc="16" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.16821428571429" ca="3" cbo="3" ce="3" impl="0" cis="3" csz="4" npm="3" vars="1" varsi="1" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/Subscription.php"/>
+      <method name="boot" start="19" end="27" ccn="1" ccn2="1" loc="9" cloc="4" eloc="7" lloc="5" ncloc="5" npath="1" hnt="23" hnd="13" hv="85.110113517245" hd="9.9166666666667" hl="0.10084033613445" he="844.00862571268" ht="46.889368095149" hb="0.029769851528226" hi="8.5825324555205" mi="67.91680529518"/>
+      <method name="user" start="29" end="32" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="subscriptionPayment" start="34" end="37" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="SubscriptionPayment" fqname="App\Models\SubscriptionPayment" start="8" end="22" loc="15" cloc="7" eloc="3" lloc="1" ncloc="8" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.16821428571429" ca="5" cbo="1" ce="1" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/SubscriptionPayment.php"/>
+      <method name="subscription" start="18" end="21" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="Transaction" fqname="App\Models\Transaction" start="9" end="52" loc="44" cloc="23" eloc="21" lloc="12" ncloc="21" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.16821428571429" ca="8" cbo="3" ce="3" impl="0" cis="3" csz="4" npm="3" vars="1" varsi="1" varsnp="0" wmc="6" wmci="6" wmcnp="6">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/Transaction.php"/>
+      <method name="boot" start="24" end="41" ccn="4" ccn2="4" loc="18" cloc="8" eloc="15" lloc="10" ncloc="10" npath="5" hnt="41" hnd="16" hv="164" hd="19.928571428571" hl="0.050179211469534" he="3268.2857142857" ht="181.57142857143" hb="0.073410596964918" hi="8.2293906810036" mi="58.298410127169"/>
+      <method name="user" start="43" end="46" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="transactionDetails" start="48" end="51" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="TransactionDetail" fqname="App\Models\TransactionDetail" start="8" end="28" loc="21" cloc="10" eloc="6" lloc="2" ncloc="11" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.16821428571429" ca="2" cbo="2" ce="2" impl="0" cis="2" csz="3" npm="2" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/TransactionDetail.php"/>
+      <method name="transaction" start="19" end="22" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="product" start="24" end="27" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="User" fqname="App\Models\User" start="11" end="82" loc="72" cloc="44" eloc="26" lloc="10" ncloc="28" dit="2" noam="6" nocc="0" noom="0" nom="6" cr="0.15" rcr="0.2775" ca="10" cbo="5" ce="5" impl="0" cis="5" csz="8" npm="5" vars="2" varsi="2" varsnp="0" wmc="7" wmci="7" wmcnp="6">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Models/User.php"/>
+      <method name="casts" start="45" end="51" ccn="1" ccn2="1" loc="7" cloc="3" eloc="6" lloc="1" ncloc="4" npath="1" hnt="13" hnd="11" hv="44.972611042285" hd="7.875" hl="0.12698412698413" he="354.15931195799" ht="19.675517331" hb="0.016685703503055" hi="5.7108077514013" mi="71.316969334197"/>
+      <method name="boot" start="52" end="61" ccn="2" ccn2="2" loc="10" cloc="4" eloc="8" lloc="5" ncloc="6" npath="2" hnt="20" hnd="13" hv="74.008794362822" hd="18" hl="0.055555555555556" he="1332.1582985308" ht="74.008794362822" hb="0.040356729911006" hi="4.1115996868234" mi="66.942275201515"/>
+      <method name="productCategories" start="63" end="66" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="products" start="68" end="71" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="transactions" start="73" end="76" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="subscriptions" start="78" end="81" ccn="1" ccn2="1" loc="4" cloc="1" eloc="3" lloc="1" ncloc="3" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+  </package>
+  <package name="App\Providers" noc="1" noi="0" nom="2" nof="0" cr="0.15" rcr="0.2775">
+    <class name="AppServiceProvider" fqname="App\Providers\AppServiceProvider" start="7" end="24" loc="18" cloc="10" eloc="4" lloc="0" ncloc="8" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Providers/AppServiceProvider.php"/>
+      <method name="register" start="12" end="15" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="boot" start="20" end="23" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+    </class>
+  </package>
+  <package name="App\Providers\Filament" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.2775">
+    <class name="AdminPanelProvider" fqname="App\Providers\Filament\AdminPanelProvider" start="23" end="61" loc="39" cloc="29" eloc="35" lloc="-2" ncloc="10" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="16" ce="16" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/Volumes/KINGSTON SNV3S500G Media/Kuliah/SEMESTER 5/scandish/app/Providers/Filament/AdminPanelProvider.php"/>
+      <method name="panel" start="25" end="60" ccn="1" ccn2="1" loc="36" cloc="28" eloc="35" lloc="-2" ncloc="8" npath="1" hnt="71" hnd="33" hv="358.15198247445" hd="8.0625" hl="0.12403100775194" he="2887.6003587003" ht="160.42224215001" hb="0.067593272012655" hi="44.42195131466" mi="48.299639050514"/>
+    </class>
+  </package>
+</metrics>

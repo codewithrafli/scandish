@@ -4,6 +4,23 @@ use App\Http\Controllers\FrontendController; // Import FrontendController
 use App\Http\Controllers\ProductController; // Import ProductController
 use App\Http\Controllers\TransactionController; // Import TransactionController
 use Illuminate\Support\Facades\Route; // Import Route facade
+use Illuminate\Support\Facades\Auth;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
+
+Route::get('/download-qr', function () {
+    $user = Auth::user();
+    if (!$user || $user->role !== 'store') {
+        abort(403);
+    }
+    
+    $qrCode = QrCode::format('png')
+        ->size(500)
+        ->generate(url('/' . $user->username));
+        
+    return response($qrCode)
+        ->header('Content-Type', 'image/png')
+        ->header('Content-Disposition', 'attachment; filename="store-' . $user->username . '-qrcode.png"');
+})->middleware('auth')->name('download-qr');
 
 Route::get('/', [FrontendController::class, 'scanQR'])->name('scan-qr'); // Route untuk halaman scan QR
 Route::get('/{username}', [FrontendController::class, 'index'])->name('index'); // Route untuk halaman index/home dengan parameter username
